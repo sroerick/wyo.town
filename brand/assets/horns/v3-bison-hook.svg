@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" color="#101418">
+  <title>v3: bison hook, deeper inward curl</title>
+  <g fill="none" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"
+     stroke-linecap="butt" stroke-miterlimit="12">
+    <path d="M20 26 L38 60 L50 40 L62 60 L80 26"/>
+    <path d="M50 74 V96"/>
+    <path d="M23 74 H77"/>
+  </g>
+  <g fill="currentColor">
+    <path d="M19.65 39.24 C17.5 31.5 12.5 24 8.5 17 C6 12 4.5 5.5 10.5 2.5 C6.5 7 7.5 13 10.5 18 C14 23.5 19.5 27.5 25 30 C27.5 31.3 29.5 32.2 31.15 33.16 Z"/>
+    <path d="M80.35 39.24 C82.5 31.5 87.5 24 91.5 17 C94 12 95.5 5.5 89.5 2.5 C93.5 7 92.5 13 89.5 18 C86 23.5 80.5 27.5 75 30 C72.5 31.3 70.5 32.2 68.85 33.16 Z"/>
+  </g>
+</svg>

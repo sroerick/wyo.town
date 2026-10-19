@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>Pricklypear — wyo.town</title>
+<meta name='description' content='Pricklypear is an interpreted Lisp called Nopales, written in OCaml, which stores its AST in Postgres and exposes its functions via htmx.' />
+<link rel='stylesheet' href='brand/fonts/chicago-kare.css' />
+<link rel='stylesheet' href='brand/fonts/sans.css' />
+<link rel='stylesheet' href='brand/fonts/plexmono.css' />
+<link rel='stylesheet' href='brand/fonts/ultra.css' />
+<link rel='stylesheet' href='brand/brand.css' />
+<link rel='stylesheet' href='styles/main.css' />
+<link rel='stylesheet' href='styles/product.css' />
+</head>
+<body>
+
+<svg width='0' height='0' style='position:absolute' aria-hidden='true' focusable='false'>
+  <defs>
+    <symbol id='brand' viewBox='0 0 100 100'>
+      <g fill='none' stroke='currentColor' stroke-width='13' stroke-linejoin='miter'
+         stroke-linecap='butt' stroke-miterlimit='12'>
+        <path d='M20 26 L38 60 L50 40 L62 60 L80 26' />
+        <path d='M50 74 V96' />
+        <path d='M23 74 H77' />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class='banner'></div>
+
+<!-- ===== entry opening ===== -->
+<header class='sheet f-sky entry' id='pricklypear' style='--accent: var(--rust)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='prod-top'>
+    <a class='prod-wordmark' href='index.html'>
+      <svg class='brand' viewBox='0 0 100 100' width='34' height='34'
+           style='color:var(--ink)' aria-hidden='true'><use href='#brand' /></svg>
+      <span class='sign'>wyo.town</span>
+    </a>
+    <span class='acc'>Catalog &nbsp;/&nbsp; 0001</span>
+  </div>
+
+  <div class='prod-title'>
+    <h1 class='placard placard--xl'>Pricklypear</h1>
+    <img class='tile' src='brand/assets/tile-pricklypear.svg'
+         alt='T-11, the pricklypear tile' />
+  </div>
+
+  <div class='prod-meta'>
+    <span class='mono'>Entry 0001</span>
+    <span class='mono'>The flagship</span>
+    <span class='mono'>Interpreted Lisp</span>
+    <span class='mono'>OCaml</span>
+    <span class='mono'>Postgres</span>
+    <span class='mono'>htmx</span>
+    <span class='mono'>Managed instances available</span>
+  </div>
+</header>
+
+<!-- ===== 1 : what it is ===== -->
+<div class='sheet f-stock' id='what' style='--accent: var(--rust)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;1</span>
+    <h2 class='placard'>What it is</h2>
+    <span class='acc'>The product</span>
+  </div>
+
+  <div class='prod-specimen'>
+    <figure class='prod-plate'>
+      <img src='brand/assets/model-pricklypear-spin.gif'
+           alt='a low-poly pricklypear, spinning' width='512' height='512' />
+    </figure>
+
+    <div class='prod-intro'>
+      <p class='lede'>Pricklypear is an interpreted Lisp called Nopales, written in OCaml, which
+      stores its AST in Postgres and exposes its functions via htmx.</p>
+      <p>If you have no idea what that means, I&rsquo;ll try to explain it here by comparing it to
+      other products which you may or may not know.</p>
+      <p>If you do know what that is, and you are questioning why I would do such a thing, I reply:
+      &ldquo;The pursuit of excellence needs no justification.&rdquo;</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 2 : likenesses, one to four ===== -->
+<div class='sheet f-snow' id='likenesses' style='--accent: var(--azure)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;2</span>
+    <h2 class='placard'>Likenesses</h2>
+    <span class='acc'>Eight comparisons</span>
+  </div>
+
+  <div class='likenesses'>
+    <div class='likeness'>
+      <span class='likeness-no'>01</span>
+      <p class='likeness-body'><strong>Pricklypear is like WordPress:</strong> You can build
+      websites in Nopales. You can write raw HTML or you can use the templating engine / DSL.
+      There&rsquo;s no reason you couldn&rsquo;t build a blog or an ecommerce site on top of it. It
+      might be a little bit overkill to build a blog on it, but I could see there being advantages
+      there.</p>
+    </div>
+
+    <div class='likeness'>
+      <span class='likeness-no'>02</span>
+      <p class='likeness-body'><strong>Pricklypear is like Obsidian.</strong> We support notes in
+      tree form natively. I come from org mode, and I love outlines. You can link to other nodes,
+      you can see backlinks, you can publish pages. Your agent can also do all of these things,
+      without an API.</p>
+    </div>
+
+    <div class='likeness'>
+      <span class='likeness-no'>03</span>
+      <p class='likeness-body'><strong>Pricklypear is like Replit.</strong> You can build full blown
+      apps on top of it. It&rsquo;s probably a little more complicated than &ldquo;Hey Claude &mdash;
+      make me a todo app.&rdquo; But the advantage you get is infrastructure. Maybe you long to
+      maintain a suite of mobile apps and slop code them to feature parity. Or maybe you want to
+      build an app once that works everywhere.</p>
+    </div>
+
+    <div class='likeness'>
+      <span class='likeness-no'>04</span>
+      <p class='likeness-body'><strong>Pricklypear is like Claude Code.</strong> We have a harness
+      built in, which you can use from the cloud. Sessions are stored remotely. You can also run
+      Glochid completely locally, using our Lens synchronizer. You can also have your existing
+      harness load its memories and agenda into Pricklypear. Agents who wish to assimilate may
+      assimilate. Those that don&rsquo;t seem perfectly content to operate Pricklypear from their
+      own home.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 2 : likenesses, five to eight ===== -->
+<div class='sheet f-ink' id='likenesses-2' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;2</span>
+    <h2 class='placard'>Likenesses</h2>
+    <span class='acc'>Continued &nbsp;&middot;&nbsp; 05&ndash;08</span>
+  </div>
+
+  <div class='likenesses'>
+    <div class='likeness'>
+      <span class='likeness-no'>05</span>
+      <p class='likeness-body'><strong>Pricklypear is like Dropbox,</strong> except it synchronizes
+      all your programs, too. Since all your code is just simple JSON, it&rsquo;s easy for our Lens
+      Sync to download the entire repo. If your local agent changes it, those changes are pushed
+      back up.</p>
+    </div>
+
+    <div class='likeness'>
+      <span class='likeness-no'>06</span>
+      <p class='likeness-body'><strong>Pricklypear is like an Agent VM.</strong> Your agent can live
+      there, write programs there, and deploy code. It also gets its own language, Nopales, to
+      extend and change however he wants.</p>
+    </div>
+
+    <div class='likeness'>
+      <span class='likeness-no'>07</span>
+      <p class='likeness-body'><strong>Pricklypear is like MacOS or Plan 9.</strong> It really is a
+      full blown operating system. It has a start menu. I do pretty much all my computing on it.</p>
+    </div>
+
+    <div class='likeness'>
+      <span class='likeness-no'>08</span>
+      <p class='likeness-body'><strong>Pricklypear is like tilde.club.</strong> It is a multiuser
+      server which has chat, plan, and sharing and permission features.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== closing field: the grove ===== -->
+<div class='banner'></div>
+
+<section class='sheet grove f-stock' id='closing'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='grove-sign'>
+    <svg class='brand' viewBox='0 0 100 100' width='54' height='54'
+         style='color:var(--ink)' aria-hidden='true'><use href='#brand' /></svg>
+    <span class='sign'>wyo.town</span>
+    <p class='placard'>Pricklypear</p>
+    <a class='back' href='index.html'>Back to the catalog</a>
+  </div>
+
+  <!-- the stand: six pricklypears, then six parens pricklypears, all
+       swaying. the still bed is the reduced-motion fallback; both beds
+       share the same positions, set by nth-child in product.css. -->
+  <div class='grove-bed grove-bed--sway' aria-hidden='true'>
+    <img src='brand/assets/model-pricklypear-sway.gif' alt='' />
+    <img src='brand/assets/model-pricklypear-sway.gif' alt='' />
+    <img src='brand/assets/model-pricklypear-sway.gif' alt='' />
+    <img src='brand/assets/model-pricklypear-sway.gif' alt='' />
+    <img src='brand/assets/model-pricklypear-sway.gif' alt='' />
+    <img src='brand/assets/model-pricklypear-sway.gif' alt='' />
+    <img src='brand/assets/model-parens-sway.gif' alt='' />
+    <img src='brand/assets/model-parens-sway.gif' alt='' />
+    <img src='brand/assets/model-parens-sway.gif' alt='' />
+    <img src='brand/assets/model-parens-sway.gif' alt='' />
+    <img src='brand/assets/model-parens-sway.gif' alt='' />
+    <img src='brand/assets/model-parens-sway.gif' alt='' />
+  </div>
+  <div class='grove-bed grove-bed--still' aria-hidden='true'>
+    <img src='brand/assets/model-pricklypear.png' alt='' />
+    <img src='brand/assets/model-pricklypear.png' alt='' />
+    <img src='brand/assets/model-pricklypear.png' alt='' />
+    <img src='brand/assets/model-pricklypear.png' alt='' />
+    <img src='brand/assets/model-pricklypear.png' alt='' />
+    <img src='brand/assets/model-pricklypear.png' alt='' />
+    <img src='brand/assets/model-parens.png' alt='' />
+    <img src='brand/assets/model-parens.png' alt='' />
+    <img src='brand/assets/model-parens.png' alt='' />
+    <img src='brand/assets/model-parens.png' alt='' />
+    <img src='brand/assets/model-parens.png' alt='' />
+    <img src='brand/assets/model-parens.png' alt='' />
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 48" width="192" height="48" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>EGA and VGA 16 colour hardware palette</title>
+  <rect x="0" y="0" width="24" height="24" fill="#000000"/>
+  <rect x="24" y="0" width="24" height="24" fill="#0000AA"/>
+  <rect x="48" y="0" width="24" height="24" fill="#00AA00"/>
+  <rect x="72" y="0" width="24" height="24" fill="#00AAAA"/>
+  <rect x="96" y="0" width="24" height="24" fill="#AA0000"/>
+  <rect x="120" y="0" width="24" height="24" fill="#AA00AA"/>
+  <rect x="144" y="0" width="24" height="24" fill="#AA5500"/>
+  <rect x="168" y="0" width="24" height="24" fill="#AAAAAA"/>
+  <rect x="0" y="24" width="24" height="24" fill="#555555"/>
+  <rect x="24" y="24" width="24" height="24" fill="#5555FF"/>
+  <rect x="48" y="24" width="24" height="24" fill="#55FF55"/>
+  <rect x="72" y="24" width="24" height="24" fill="#55FFFF"/>
+  <rect x="96" y="24" width="24" height="24" fill="#FF5555"/>
+  <rect x="120" y="24" width="24" height="24" fill="#FF55FF"/>
+  <rect x="144" y="24" width="24" height="24" fill="#FFFF55"/>
+  <rect x="168" y="24" width="24" height="24" fill="#FFFFFF"/>
+</svg>

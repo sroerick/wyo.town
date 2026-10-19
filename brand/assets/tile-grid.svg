@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="128" height="128" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>grid tile, 16x16</title>
+  <rect width="16" height="16" fill="#101418"/>
+  <path fill="#C8F24E" d="M0 0h16v1h-16zM0 4h16v1h-16zM0 8h16v1h-16zM0 12h16v1h-16zM0 1h1v3h-1zM0 5h1v3h-1zM0 9h1v3h-1zM0 13h1v3h-1zM4 1h1v3h-1zM4 5h1v3h-1zM4 9h1v3h-1zM4 13h1v3h-1zM8 1h1v3h-1zM8 5h1v3h-1zM8 9h1v3h-1zM8 13h1v3h-1zM12 1h1v3h-1zM12 5h1v3h-1zM12 9h1v3h-1zM12 13h1v3h-1z"/>
+</svg>

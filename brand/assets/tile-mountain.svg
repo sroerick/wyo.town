@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="128" height="128" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>mountain tile</title>
+  <path fill="#2A3340" d="M3 7h1v1h-1zM5 7h1v1h-1zM7 7h1v1h-1zM9 7h1v1h-1zM11 7h1v1h-1zM3 8h10v1h-10zM2 9h12v1h-12zM1 10h14v1h-14zM0 11h16v2h-16z"/>
+  <path fill="#FFFFFF" d="M7 3h2v1h-2zM6 4h4v1h-4zM5 5h6v1h-6zM4 6h8v1h-8zM4 7h1v1h-1zM6 7h1v1h-1zM8 7h1v1h-1zM10 7h1v1h-1zM12 7h1v1h-1z"/>
+</svg>

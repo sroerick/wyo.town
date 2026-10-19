@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>wyo.town identity standards</title>
+<meta name='description' content='wyo.town identity standards' />
+<link rel='stylesheet' href='fonts/chicago-kare.css' />
+<link rel='stylesheet' href='fonts/sans.css' />
+<link rel='stylesheet' href='fonts/plexmono.css' />
+<link rel='stylesheet' href='fonts/ultra.css' />
+<link rel='stylesheet' href='brand.css' />
+</head>
+<body>
+
+<canvas class='starfield' data-starfield aria-hidden='true'></canvas>
+
+<svg width='0' height='0' style='position:absolute' aria-hidden='true' focusable='false'>
+  <defs>
+    <symbol id='brand' viewBox='0 0 100 100'>
+      <g fill='none' stroke='currentColor' stroke-width='13' stroke-linejoin='miter'
+         stroke-linecap='butt' stroke-miterlimit='12'>
+        <path d='M20 26 L38 60 L50 40 L62 60 L80 26' />
+        <path d='M50 74 V96' />
+        <path d='M23 74 H77' />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class='banner'></div>
+
+<!-- ===== 1 ===== -->
+<div class='sheet f-azure'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div style='display:flex;justify-content:space-between;align-items:flex-end;gap:28px;padding-top:34px'>
+    <h1 class='sign sign--xl'>wyo.town</h1>
+    <svg class='brand pep-amber' viewBox='0 0 100 100' width='96' height='96'
+         aria-hidden='true'><use href='#brand' /></svg>
+  </div>
+
+</div>
+
+<!-- ===== 2 : the mark ===== -->
+<div class='sheet f-snow'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;1</span>
+    <h2 class='placard'>The mark</h2>
+  </div>
+
+  <div style='display:flex;align-items:flex-end;gap:36px;flex-wrap:wrap'>
+    <svg class='brand pep-rust' viewBox='0 0 100 100' width='120' height='120' aria-label='brand mark, 120 px'><use href='#brand' /></svg>
+    <svg class='brand pep-rust' viewBox='0 0 100 100' width='72' height='72' aria-label='brand mark, 72 px'><use href='#brand' /></svg>
+    <svg class='brand pep-ink' viewBox='0 0 100 100' width='40' height='40' aria-label='brand mark, 40 px'><use href='#brand' /></svg>
+    <svg class='brand pep-ink' viewBox='0 0 100 100' width='24' height='24' aria-label='brand mark, 24 px'><use href='#brand' /></svg>
+    <span class='acc'>120 / 72 / 40 / 24</span>
+  </div>
+
+  <div class='cols-2' style='margin-top:24px;grid-template-columns:1fr 1.2fr'>
+    <div class='board' style='background:var(--azure);border-color:var(--azure)'>
+      <svg class='brand pep-snow' viewBox='0 0 100 100' width='96' height='96' aria-hidden='true'><use href='#brand' /></svg>
+      <span class='sign' style='font-size:48px'>wyo.town</span>
+    </div>
+    <div>
+      <div class='spec' style='padding-top:0'>
+        <span class='label'>Device</span><span>The brand: W over T, aleph over tav.</span>
+      </div>
+      <div class='spec'>
+        <span class='label'>Reading</span><span>Wyoming ranch brand, and the first and the last.</span>
+      </div>
+      <div class='spec'>
+        <span class='label'>Color</span><span>RUST, AMBER, INK, SNOW. One per artifact.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class='r-hair' style='margin:26px 0 22px'></div>
+
+  <div class='lockup'>
+    <span class='sign'>wyo.town</span>
+    <svg class='brand pep-snow' viewBox='0 0 100 100' width='72' height='72'
+         aria-hidden='true'><use href='#brand' /></svg>
+  </div>
+
+  <div class='cols-2' style='margin-top:12px'>
+    <div class='lockup lockup--plain'>
+      <span class='sign sign--sm'>wyo.town</span>
+      <svg class='brand pep-rust' viewBox='0 0 100 100' width='44' height='44' aria-hidden='true'><use href='#brand' /></svg>
+    </div>
+    <div class='lockup lockup--board'>
+      <span class='sign sign--sm'>wyo.town</span>
+      <svg class='brand pep-amber' viewBox='0 0 100 100' width='44' height='44'
+           aria-hidden='true'><use href='#brand' /></svg>
+    </div>
+  </div>
+
+  <div class='cols-2' style='margin-top:22px;grid-template-columns:1fr 1.2fr'>
+    <div class='board'>
+      <svg class='brand pep-snow' viewBox='0 0 100 100' width='54' height='54' aria-hidden='true'><use href='#brand' /></svg>
+      <span class='sign' style='font-size:54px'>wyo.town</span>
+    </div>
+    <div>
+      <div class='spec' style='padding-top:0'>
+        <span class='label'>Clear space</span><span>One mark height.</span>
+      </div>
+      <div class='spec'>
+        <span class='label'>Device color</span><span>RUST, AMBER, INK, SNOW. One per artifact.</span>
+      </div>
+      <div class='spec'>
+        <span class='label'>Floor</span><span>24 px. Below that, the wordmark alone.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 3 : type ===== -->
+<div class='sheet f-lime'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;2</span>
+    <h2 class='placard'>Type</h2>
+  </div>
+
+  <div class='spec' style='border-bottom:2px solid currentColor'>
+    <span class='label' style='opacity:1'>01 &nbsp;Placard</span>
+    <div>
+      <p class='placard placard--xl' style='font-size:44px'>wyo.town 0123456789</p>
+      <p class='mono' style='margin-top:8px;opacity:.75'>Chicago Kare &nbsp;/&nbsp; headings, labels, interface</p>
+    </div>
+  </div>
+
+  <div class='spec' style='border-bottom:2px solid currentColor'>
+    <span class='label' style='opacity:1'>02 &nbsp;Sign</span>
+    <div>
+      <p class='sign' style='font-size:58px'>wyo.town</p>
+      <p class='mono' style='margin-top:8px;opacity:.75'>Ultra &nbsp;/&nbsp; wordmark and numerals only</p>
+    </div>
+  </div>
+
+  <div class='spec' style='border-bottom:2px solid currentColor'>
+    <span class='label' style='opacity:1'>03 &nbsp;Field</span>
+    <div>
+      <p style='font-size:22px;margin:0'>Aa Bb Cc Dd Ee Ff Gg 0123456789</p>
+      <p class='mono' style='margin-top:8px;opacity:.75'>Instrument Sans &nbsp;/&nbsp; prose</p>
+    </div>
+  </div>
+
+  <div class='spec' style='border-bottom:2px solid currentColor'>
+    <span class='label' style='opacity:1'>04 &nbsp;Register</span>
+    <div>
+      <p class='mono' style='font-size:22px;text-transform:none'>WYO-0007 / REV C / 2026-10-18</p>
+      <p class='mono' style='margin-top:8px;opacity:.75'>IBM Plex Mono &nbsp;/&nbsp; numbers, codes, dates</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 4 : ink ===== -->
+<div class='sheet f-snow'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;3</span>
+    <h2 class='placard'>Ink</h2>
+  </div>
+
+  <div class='cols-2' style='grid-template-columns:auto 1fr'>
+    <div>
+      <img src='assets/palette-vga16.svg' width='384' height='96' alt='EGA and VGA 16 colour hardware palette'
+           style='display:block;border:1px solid var(--ink);image-rendering:pixelated' />
+      <p class='acc' style='margin-top:8px'>EGA / VGA 16 &nbsp;/&nbsp; 1984</p>
+    </div>
+    <div>
+      <img src='assets/palette-web216.svg' width='288' height='192' alt='web safe 216 colour palette'
+           style='display:block;border:1px solid var(--ink);image-rendering:pixelated' />
+      <p class='acc' style='margin-top:8px'>Web safe 216 &nbsp;/&nbsp; 1996</p>
+    </div>
+  </div>
+
+  <div class='r-hair' style='margin:26px 0 18px'></div>
+
+  <div class='inks'>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-00);color:var(--snow)'><span class='mono'>00</span></div><div class='ink-meta'><div class='ink-name'>Ink</div><div class='ink-note'>#101418 the night, type and rules</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-01)'><span class='mono'>01</span></div><div class='ink-meta'><div class='ink-name'>Snow</div><div class='ink-note'>#F6F5F0 the light field</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-02)'><span class='mono'>02</span></div><div class='ink-meta'><div class='ink-name'>Stock</div><div class='ink-note'>#EAD2A0 desert sand, archive paper</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-03)'><span class='mono'>03</span></div><div class='ink-meta'><div class='ink-name'>Chrome</div><div class='ink-note'>#BFBFBF dry bone</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-04);color:var(--snow)'><span class='mono'>04</span></div><div class='ink-meta'><div class='ink-name'>Rust</div><div class='ink-note'>#AA3311 clay and iron</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-05)'><span class='mono'>05</span></div><div class='ink-meta'><div class='ink-name'>Amber</div><div class='ink-note'>#FFB300 dry grass, attention</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-06)'><span class='mono'>06</span></div><div class='ink-meta'><div class='ink-name'>Sunset</div><div class='ink-note'>#FF7A45 heat on the horizon</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-07)'><span class='mono'>07</span></div><div class='ink-meta'><div class='ink-name'>Pink</div><div class='ink-note'>#FF3EA5 the fruit</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-08);color:var(--snow)'><span class='mono'>08</span></div><div class='ink-meta'><div class='ink-name'>Magenta</div><div class='ink-note'>#AA00AA the fruit, ripe</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-09);color:var(--snow)'><span class='mono'>09</span></div><div class='ink-meta'><div class='ink-name'>Plum</div><div class='ink-note'>#7A1FA2 dusk</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-10);color:var(--snow)'><span class='mono'>10</span></div><div class='ink-meta'><div class='ink-name'>Azure</div><div class='ink-note'>#1E6BFF the stream, links</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-11)'><span class='mono'>11</span></div><div class='ink-meta'><div class='ink-name'>Sky</div><div class='ink-note'>#88CCEE the rain sky</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-12)'><span class='mono'>12</span></div><div class='ink-meta'><div class='ink-name'>Aqua</div><div class='ink-note'>#00C2C7 spring water</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-13)'><span class='mono'>13</span></div><div class='ink-meta'><div class='ink-name'>Lime</div><div class='ink-note'>#C8F24E the pads</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-14);color:var(--snow)'><span class='mono'>14</span></div><div class='ink-meta'><div class='ink-name'>Teal</div><div class='ink-note'>#0B5D6B deep water</div></div></div>
+    <div class='ink-cell'><div class='ink-chip' style='background:var(--ink-15);color:var(--snow)'><span class='mono'>15</span></div><div class='ink-meta'><div class='ink-name'>Territorial</div><div class='ink-note'>#002F6C deep water at night</div></div></div>
+  </div>
+
+  <div class='r-hair' style='margin:26px 0 18px'></div>
+
+  <div class='cols-2' style='grid-template-columns:1.15fr 1fr'>
+    <div>
+      <table class='pairs'>
+        <tr><th>Field</th><th>Type</th><th>One accent</th></tr>
+        <tr><td><i class='sw' style='background:var(--ink-00)'></i>INK</td><td>SNOW</td><td>AMBER</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-01)'></i>SNOW</td><td>INK</td><td>AZURE</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-02)'></i>STOCK</td><td>INK</td><td>RUST</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-11)'></i>SKY</td><td>INK</td><td>RUST</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-13)'></i>LIME</td><td>INK</td><td>MAGENTA</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-12)'></i>AQUA</td><td>INK</td><td>PINK</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-07)'></i>PINK</td><td>INK</td><td>LIME</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-10)'></i>AZURE</td><td>SNOW</td><td>AMBER</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-08)'></i>MAGENTA</td><td>INK</td><td>LIME</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-09)'></i>PLUM</td><td>SNOW</td><td>LIME</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-14)'></i>TEAL</td><td>SNOW</td><td>AMBER</td></tr>
+        <tr><td><i class='sw' style='background:var(--ink-15)'></i>TERRITORIAL</td><td>SNOW</td><td>AMBER</td></tr>
+      </table>
+      <p class='mono' style='margin-top:12px;text-transform:none;letter-spacing:0'>One field per page. One accent per page.</p>
+    </div>
+    <div>
+      <div class='dither-edge'></div>
+      <p class='acc' style='margin-top:8px'>The shoreline, the only texture</p>
+      <p class='mono' style='margin-top:16px;text-transform:none;letter-spacing:0'>Desert ink meets stream ink. Nothing blends.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 5 : tiles ===== -->
+<div class='sheet f-teal'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;4</span>
+    <h2 class='placard'>Tiles</h2>
+  </div>
+
+  <div class='tile-inline'>
+    <img src='assets/tile-pricklypear.svg' width='72' height='72' alt='pricklypear tile' />
+    <p class='placard' style='margin:0'>One square, beside a thing</p>
+  </div>
+
+  <div style='margin-top:22px;max-width:520px'>
+    <div class='banner-strip'></div>
+    <p class='acc' style='margin-top:6px'>A tile may repeat inside a band</p>
+  </div>
+
+  <div class='board-grid' style='margin-top:24px'>
+    <div class='specimen' style='background:var(--snow)'><img src='assets/tile-pricklypear.svg' alt='' /><span class='acc'>T-11</span><span class='sname'>Pricklypear</span><span class='snote'>the hero, 32x32 figure</span></div>
+    <div class='specimen'><img src='assets/tile-cloud.svg' alt='' /><span class='acc'>T-01</span><span class='sname'>Cloud</span><span class='snote'>16x16 pattern</span></div>
+    <div class='specimen'><img src='assets/tile-grid.svg' alt='' /><span class='acc'>T-02</span><span class='sname'>Grid</span><span class='snote'>16x16 pattern</span></div>
+    <div class='specimen'><img src='assets/tile-dither.svg' alt='' /><span class='acc'>T-03</span><span class='sname'>Dither</span><span class='snote'>16x16 pattern</span></div>
+    <div class='specimen'><img src='assets/tile-strata.svg' alt='' /><span class='acc'>T-17</span><span class='sname'>Strata</span><span class='snote'>16x16 pattern</span></div>
+    <div class='specimen'><img src='assets/tile-ripple.svg' alt='' /><span class='acc'>T-05</span><span class='sname'>Ripple</span><span class='snote'>16x16 pattern</span></div>
+    <div class='specimen'><img src='assets/tile-granite.svg' alt='' /><span class='acc'>T-06</span><span class='sname'>Granite</span><span class='snote'>16x16 pattern</span></div>
+    <div class='specimen'><img src='assets/tile-trout.svg' alt='' /><span class='acc'>T-18</span><span class='sname'>Trout</span><span class='snote'>32x32 figure</span></div>
+    <div class='specimen'><img src='assets/tile-hourglass.svg' alt='' /><span class='acc'>T-08</span><span class='sname'>Hourglass</span><span class='snote'>32x32, animated</span></div>
+    <div class='specimen' style='background:var(--snow)'><img src='assets/tile-cowhide.svg' alt='' /><span class='acc'>T-09</span><span class='sname'>Cowhide</span><span class='snote'>32x32 pattern</span></div>
+    <div class='specimen' style='background:var(--ink)'><img src='assets/tile-stream.svg' alt='' /><span class='acc' style='color:var(--snow)'>T-19</span><span class='sname' style='color:var(--snow)'>Stream</span><span class='snote' style='color:var(--snow)'>32x32 figure</span></div>
+    <div class='specimen' style='background:var(--snow)'><img src='assets/tile-sage.svg' alt='' /><span class='acc'>T-12</span><span class='sname'>Sage</span><span class='snote'>32x32 figure</span></div>
+    <div class='specimen' style='background:var(--sky)'><img src='assets/tile-mountain.svg' alt='' /><span class='acc'>T-13</span><span class='sname'>Mountain</span><span class='snote'>16x16 figure</span></div>
+    <div class='specimen' style='background:var(--azure)'><img src='assets/tile-starburst.svg' alt='' /><span class='acc' style='color:var(--snow)'>T-14</span><span class='sname' style='color:var(--snow)'>Starburst</span><span class='snote' style='color:var(--snow)'>32x32 figure</span></div>
+    <div class='specimen' style='background:var(--sky)'><img src='assets/tile-cottonwood.svg' alt='' /><span class='acc'>T-20</span><span class='sname'>Cottonwood</span><span class='snote'>32x32 figure</span></div>
+    <div class='specimen' style='background:var(--ink)'><img src='assets/tile-moon.svg' alt='' /><span class='acc' style='color:var(--snow)'>T-16</span><span class='sname' style='color:var(--snow)'>Moon</span><span class='snote' style='color:var(--snow)'>32x32 figure</span></div>
+  </div>
+
+  <div style='margin-top:26px;max-width:420px'>
+    <img class='photo-tile' src='assets/photo-cloud-4up.jpg' alt='the cloud photograph, four up' />
+    <p class='acc' style='margin-top:6px'>Photograph, four up</p>
+  </div>
+
+  <div class='cols-2' style='margin-top:26px'>
+    <div>
+      <div class='repeat'>
+        <img src='assets/tile-cloud.svg' width='64' height='64' alt='' /><img src='assets/tile-cloud.svg' width='64' height='64' alt='' /><img src='assets/tile-cloud.svg' width='64' height='64' alt='' /><img src='assets/tile-cloud.svg' width='64' height='64' alt='' />
+      </div>
+      <p class='acc' style='margin-top:6px'>The repeat, documented</p>
+    </div>
+    <div>
+      <div class='frame-strip'><img src='assets/tile-hourglass.svg' width='96' height='96' alt='the hourglass, running' /></div>
+      <p class='acc' style='margin-top:6px'>T-08, running</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 6 : rules and registers ===== -->
+<div class='sheet f-pink'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;5</span>
+    <h2 class='placard'>Rules</h2>
+  </div>
+
+  <div class='stack'>
+    <div><div class='r-hair'></div><span class='acc'>Hairline, 1 px</span></div>
+    <div><div class='r-heavy'></div><span class='acc'>Heavy, 4 px</span></div>
+    <div><div class='r-double'></div><span class='acc'>Double, masthead only</span></div>
+    <div><div class='ticks'></div><span class='acc'>Tick, measure</span></div>
+    <div><div class='dither-edge'></div><span class='acc'>The shoreline, the only texture</span></div>
+  </div>
+
+  <div class='r-hair' style='margin:26px 0 16px'></div>
+  <div style='display:grid;grid-template-columns:repeat(12,1fr);gap:9px'>
+    <span style='height:52px;background:var(--azure)'></span>
+    <span style='height:52px;background:var(--azure)'></span>
+    <span style='height:52px;background:var(--lime)'></span>
+    <span style='height:52px;background:var(--lime)'></span>
+    <span style='height:52px;background:var(--azure)'></span>
+    <span style='height:52px;background:var(--azure)'></span>
+    <span style='height:52px;background:var(--azure)'></span>
+    <span style='height:52px;background:var(--lime)'></span>
+    <span style='height:52px;background:var(--azure)'></span>
+    <span style='height:52px;background:var(--azure)'></span>
+    <span style='height:52px;background:var(--lime)'></span>
+    <span style='height:52px;background:var(--azure)'></span>
+  </div>
+  <p class='acc' style='margin-top:8px'>Twelve columns, 9 px gutter</p>
+
+  <div class='r-hair' style='margin:26px 0 18px'></div>
+
+  <div class='cols-2' style='grid-template-columns:1fr 1.25fr'>
+    <div class='mlabel'>
+      <span class='acc'>wyo.town 0007</span>
+      <div class='mtitle'>Pricklypear</div>
+      <div class='mbody'>Software, browser accessible. 2026.</div>
+      <div class='mcredit'>Collection of the author<br />Source available</div>
+    </div>
+
+    <div class='line-item'>
+      <div class='shot'>
+        <img src='assets/tile-pricklypear.svg' alt='' />
+        <p class='acc' style='text-align:center;margin:8px 0 0'>No. 0007</p>
+      </div>
+      <div class='body'>
+        <span class='acc'>Field 03</span>
+        <div class='item-name'>Pricklypear</div>
+        <p class='specs'>Source available<br />Revised 2026-10-04</p>
+      </div>
+      <div class='side'>
+        <span class='acc'>Reg. no.</span>
+        <span class='big-no'>0007</span>
+        <div class='r-hair'></div>
+        <span class='acc'>Status</span>
+        <span class='mono'>In service</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 7 : use ===== -->
+<div class='sheet f-ink'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;6</span>
+    <h2 class='placard'>Use</h2>
+  </div>
+
+  <div class='usage'>
+    <div class='usage-col'>
+      <h3>Always</h3>
+      <ol>
+        <li>The desert is the subject. The machine is the medium.</li>
+        <li>Number the thing before you name it.</li>
+        <li>One field per page, one accent per page.</li>
+        <li>A tile beside content, never behind it.</li>
+        <li>Rules, not shadows.</li>
+        <li>Band a gradient. Dither a boundary.</li>
+        <li>Date everything.</li>
+      </ol>
+    </div>
+    <div class='usage-col usage-col--never'>
+      <h3>Never</h3>
+      <ol>
+        <li>Blending gradients, glow, glass, soft shadow.</li>
+        <li>A repeating background.</li>
+        <li>The mark rotated, animated or winking.</li>
+        <li>A color invented for one page.</li>
+        <li>A fifth typeface.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div style='display:flex;justify-content:space-between;align-items:center;gap:24px;padding-top:14px;margin-top:32px'>
+    <span class='acc' style='opacity:1'>wyo.town</span>
+    <svg class='brand pep-amber' viewBox='0 0 100 100' width='30' height='30'
+         aria-hidden='true'><use href='#brand' /></svg>
+  </div>
+</div>
+
+<!-- ===== closing field ===== -->
+<section class='closing' id='closing'>
+  <svg class='brand pep-snow' viewBox='0 0 100 100' width='54' height='54'
+       aria-hidden='true'><use href='#brand' /></svg>
+  <span class='sign'>wyo.town</span>
+  <p class='placard'>Super Intelligence</p>
+</section>
+
+<script src='starfield.js' defer></script>
+</body>
+</html>

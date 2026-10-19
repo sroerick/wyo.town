@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>wyo.town — Super Intelligence</title>
+<meta name='description' content='wyo.town Super Intelligence works with small and medium businesses to adopt Super Intelligence: literacy, token efficiency, building, and sovereignty.' />
+<link rel='stylesheet' href='brand/fonts/chicago-kare.css' />
+<link rel='stylesheet' href='brand/fonts/sans.css' />
+<link rel='stylesheet' href='brand/fonts/plexmono.css' />
+<link rel='stylesheet' href='brand/fonts/ultra.css' />
+<link rel='stylesheet' href='brand/brand.css' />
+<link rel='stylesheet' href='styles/main.css' />
+</head>
+<body>
+
+<canvas class='starfield' data-starfield aria-hidden='true'></canvas>
+
+<svg width='0' height='0' style='position:absolute' aria-hidden='true' focusable='false'>
+  <defs>
+    <symbol id='brand' viewBox='0 0 100 100'>
+      <g fill='none' stroke='currentColor' stroke-width='13' stroke-linejoin='miter'
+         stroke-linecap='butt' stroke-miterlimit='12'>
+        <path d='M20 26 L38 60 L50 40 L62 60 L80 26' />
+        <path d='M50 74 V96' />
+        <path d='M23 74 H77' />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class='banner'></div>
+
+<!-- ===== the masthead ===== -->
+<div class='sheet f-stock masthead'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='mast'>
+    <svg class='brand' viewBox='0 0 100 100' width='92' height='92'
+         style='color:var(--ink)' aria-label='the wyo.town brand: W over T, aleph over tav'>
+      <use href='#brand' />
+    </svg>
+    <div class='mast-copy'>
+      <h1 class='sign'>wyo.town</h1>
+    </div>
+  </div>
+
+  <div class='mast-bottom'>
+    <p class='placard'>Super Intelligence</p>
+    <p class='mono mast-meta'>EST. 2026 &nbsp;&middot;&nbsp; WYOMING, EARTH</p>
+  </div>
+
+  <img class='mast-saguaro mast-cactus--sway'
+       src='brand/assets/model-saguaro-sway.gif' alt='' aria-hidden='true' />
+  <img class='mast-saguaro mast-cactus--still'
+       src='brand/assets/model-saguaro.png' alt='' aria-hidden='true' />
+  <img class='mast-cactus mast-cactus--sway'
+       src='brand/assets/model-pricklypear-sway.gif' alt='' aria-hidden='true' />
+  <img class='mast-cactus mast-cactus--still'
+       src='brand/assets/model-pricklypear.png' alt='' aria-hidden='true' />
+  <img class='mast-fish'
+       src='brand/assets/model-pufferfish.png' alt='' aria-hidden='true' />
+  <img class='mast-tuna'
+       src='brand/assets/model-tuna.png' alt='' aria-hidden='true' />
+</div>
+
+<!-- ===== the town ===== -->
+<div class='sheet f-snow' id='town'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head' style='--accent: var(--azure)'>
+    <span class='section-no'>&sect;1</span>
+    <h2 class='placard'>The town</h2>
+    <span class='acc'>Statement</span>
+  </div>
+
+  <p class='placard statement'>This Town Is Big Enough For All Of Us</p>
+
+  <p>wyo.town is a research lab and development team focusing on supporting small and medium
+  businesses. We are focused on SI sovereignty, PL theory, and formal proofs. We would love to help
+  your team on the journey to adopt SI.</p>
+</div>
+
+<!-- ===== our approach ===== -->
+<div class='sheet f-stock' id='approach' style='--accent: var(--rust)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;2</span>
+    <h2 class='placard'>Our approach</h2>
+    <span class='acc'>Small and medium business</span>
+  </div>
+
+  <p class='lede'>We work with small and medium businesses to help them adopt Super Intelligence.
+  We can work with you at any stage of your adoption. Here&rsquo;s our approach:</p>
+
+  <div class='manifesto'>
+    <div class='plank'>
+      <span class='plank-no'>1</span>
+      <h3 class='plank-title'>SI Literacy</h3>
+      <p class='plank-body'>Encourage your team to tokenmax. Don&rsquo;t force it. Find out what
+      works and what doesn&rsquo;t. Understand it may take some time, and you may lose efficiency
+      before you gain it. If you have team members who are completely uninterested, let them focus
+      on what they love. If your team is highly motivated, give them everything they need.</p>
+    </div>
+    <div class='plank'>
+      <span class='plank-no'>2</span>
+      <h3 class='plank-title'>Token Efficiency</h3>
+      <p class='plank-body'>You&rsquo;ve found the team members who are excited about SI, and they
+      are chugging along. Teach them to be conservative with spend, reducing costs for your
+      organization. Learn the best habits that prevent your organization from spending a fortune and
+      having absolutely nothing to show for it.</p>
+    </div>
+    <div class='plank'>
+      <span class='plank-no'>3</span>
+      <h3 class='plank-title'>Build</h3>
+      <p class='plank-body'>You can finally build that app you always dreamed about making. And also,
+      your company is a software factory now. Not a tech company? Well, now you are. Build alongside
+      long-running agents, organize information which never had a place before, and formalize and
+      automate processes that you barely even knew existed. Get those gains.</p>
+    </div>
+    <div class='plank'>
+      <span class='plank-no'>4</span>
+      <h3 class='plank-title'>Sovereignty</h3>
+      <p class='plank-body'>Own your stack. Your infrastructure is your territory. Stop working with
+      companies whose stated mission is to wait until you do something valuable and then replace you.
+      Focus on zero data retention and local inference. Sovereignty isn&rsquo;t just for
+      megacorporations. Take dominion and become the master of your domain.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 0001 Pricklypear ===== -->
+<article class='sheet f-sky entry' id='pricklypear' style='--accent: var(--rust)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>0001</span>
+    <h2 class='placard'><a class='entry-link' href='pricklypear.html'>Pricklypear</a></h2>
+    <span class='acc'>Our flagship</span>
+  </div>
+
+  <div class='entry-hero'>
+    <figure class='plate'>
+      <img class='model' src='brand/assets/model-pricklypear-spin.gif'
+           alt='a low-poly pricklypear, spinning' width='320' height='320' />
+    </figure>
+    <div class='entry-prose'>
+      <p class='lede'>Our flagship product. Pricklypear is a web framework which works with agents.</p>
+      <p>Whether your company needs a brochure website or a software factory with agent employees,
+      Pricklypear can build your architecture out in a way that will scale, and at industry leading
+      prices. Some people are giving their agents VMs. We like to give ours their own language.</p>
+      <p><strong>Managed instances available.</strong></p>
+    </div>
+  </div>
+</article>
+
+<!-- ===== 0002 Nopales ===== -->
+<article class='sheet f-pink entry' id='nopales' style='--accent: var(--lime)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>0002</span>
+    <h2 class='placard'><a class='entry-link' href='nopales.html'>Nopales</a></h2>
+    <span class='acc'>The language</span>
+  </div>
+
+  <div class='entry-hero'>
+    <figure class='plate'>
+      <img class='model' src='brand/assets/model-taco-spin.gif'
+           alt='a low-poly taco de nopal, spinning' width='320' height='320' />
+    </figure>
+    <div class='entry-prose'>
+    <p class='lede'>The language the habitat is written in. Nopales is a Scheme-family Lisp-1, and
+    it is the one language humans and agents both write.</p>
+    <p>A habitat is a single running image: one OCaml process, Postgres as the object store, htmx as
+    the interface. There is no build step between a change and the system, because the process
+    <em>is</em> the API. You and your agents are editing the same live tree.</p>
+    <p>Code is data. Definitions live in branched rows with parent override, so your personal branch
+    is a garden over the system defaults rather than a fork. Effects are capability-gated: an
+    agent&rsquo;s eval carries a mask, so it can compute and propose without reaching for a branch it
+    was not granted.</p>
+    <p>That is the point of giving agents their own language instead of a VM. They can read the
+    system they are running in, and rewrite themselves while it runs.</p>
+    </div>
+  </div>
+</article>
+
+<!-- ===== 0003 Tuna ===== -->
+<article class='sheet f-aqua entry' id='tuna' style='--accent: var(--pink)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>0003</span>
+    <h2 class='placard'><a class='entry-link' href='tuna.html'>Tuna</a></h2>
+    <span class='acc'>Auditable runtime</span>
+  </div>
+
+  <div class='entry-hero'>
+    <figure class='plate'>
+      <img class='model' src='brand/assets/model-tuna-spin.gif'
+           alt='a low-poly can of tuna, spinning' width='320' height='320' />
+    </figure>
+    <div class='entry-prose'>
+      <p class='lede'>Like Pricklypear, but built on Barry Jay&rsquo;s Tree Calculus.</p>
+      <p>Don&rsquo;t worry, we barely know what that means either.</p>
+      <p>Tuna is a fully auditable runtime. It&rsquo;s a regulator&rsquo;s dream. Also, agents love it.
+      Seriously: point them at this website and ask them about Tuna and Tree Calculus.</p>
+      <p>Tuna is our secret weapon for managing large agent swarms in a safe, permission-gated,
+      and auditable way. If only a certain couple of US-based AI labs had this capability!</p>
+    </div>
+  </div>
+</article>
+
+<!-- ===== 0005 Midbar ===== -->
+<article class='sheet f-plum entry' id='midbar' style='--accent: var(--lime)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>0005</span>
+    <h2 class='placard'><a class='entry-link' href='midbar.html'>Midbar</a></h2>
+    <span class='acc'>The workstation</span>
+  </div>
+
+  <div class='entry-hero'>
+    <figure class='plate'>
+      <img class='model' src='brand/assets/model-pufferfish-spin.gif'
+           alt='a low-poly pufferfish who is also a cactus, spinning' width='320' height='320' />
+    </figure>
+    <div class='entry-prose'>
+      <p class='lede'>An OpenBSD workstation with the Omarchy posture: one path, beautiful
+      defaults, no archaeology.</p>
+      <p>Midbar is our desktop &mdash; our clone of the Omarchy idea, landed on the security-first
+      base. It takes a single blessed path from install to daily driver, opinionated defaults, a
+      curated theme, and configuration that is meant to be read rather than reconstructed. The
+      desktop is a product, not a pile of dotfiles.</p>
+      <p>Puffy made the trip to the desert and found the spines suit him. The name is the
+      wilderness: the place outside the town, where the workstation is expected to survive. It is
+      the machine we actually sit at, on the base we actually trust.</p>
+    </div>
+  </div>
+</article>
+
+<!-- ===== 0007 Borge ===== -->
+<article class='sheet f-teal entry' id='borge' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>0007</span>
+    <h2 class='placard'><a class='entry-link' href='borge.html'>Borge</a></h2>
+    <span class='acc'>The spec engine</span>
+  </div>
+
+  <div class='entry-prose entry-prose--wide'>
+    <p class='lede'>A spec-driven code orchestrator that keeps the plan and the code in step.</p>
+    <p>Borge treats the specification as the source of truth. Every file is a
+    <span class='mono'>.borg</span> s-expression, git-tracked and inlined into a project tree; no
+    module gets a section after it is written. Alignment is mechanical, not a matter of vibes.</p>
+    <p>Work is phase-gated: during <span class='mono'>plan</span> the agent may edit only spec
+    files; during <span class='mono'>make</span> only code; during <span class='mono'>review</span>
+    it runs drift, lint, and check. <span class='mono'>borge book</span> prints the whole codebase
+    as a paginated PDF with line numbers and wide margins, because the code should read.</p>
+  </div>
+</article>
+
+<!-- ===== 0008 Saguaro ===== -->
+<article class='sheet f-ink entry' id='saguaro' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>0008</span>
+    <h2 class='placard'><a class='entry-link' href='saguaro.html'>Saguaro</a></h2>
+    <span class='acc'>The always-on agent</span>
+  </div>
+
+  <div class='entry-hero'>
+    <figure class='plate'>
+      <img class='model' src='brand/assets/model-saguaro-spin.gif'
+           alt='a low-poly saguaro, spinning' width='320' height='320' />
+    </figure>
+    <div class='entry-prose'>
+      <p class='lede'>An always-on agent, on your own box, in an evening.</p>
+      <p>Saguaro is the runnable distribution of an Autolith agent: the Lisp image is the mind, the
+      keep-alive harness is the body &mdash; a zero-dependency Common Lisp XMPP bridge, a Python
+      heartbeat and watchdog, and boot scripts.</p>
+      <p>Your agent runs detached in tmux, talks to you from any XMPP client, starts conversations
+      on its own schedule, and survives crashes and reboots without hand-holding. It ships with no
+      Pricklypear dependency by default; point it at a habitat and its memories become durable rows
+      that habitat-side agents can see.</p>
+    </div>
+  </div>
+</article>
+
+<!-- ===== closing field ===== -->
+<section class='closing' id='closing'>
+  <svg class='brand' viewBox='0 0 100 100' width='54' height='54'
+       style='color:var(--snow)' aria-hidden='true'><use href='#brand' /></svg>
+  <span class='sign'>wyo.town</span>
+  <p class='placard'>Super Intelligence</p>
+</section>
+
+<script src='brand/starfield.js' defer></script>
+</body>
+</html>

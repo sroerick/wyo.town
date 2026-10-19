@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="128" height="128" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>cloud tile, 16x16</title>
+  <rect width="16" height="16" fill="#88CCEE"/>
+  <path fill="#FFFFFF" d="M5 3h4v1h-4zM3 4h8v1h-8zM2 5h11v1h-11zM1 6h14v2h-14zM2 8h12v1h-12z"/>
+  <path fill="#D2E9F5" d="M3 9h10v1h-10z"/>
+</svg>

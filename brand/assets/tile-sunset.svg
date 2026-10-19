@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="256" height="256" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>sunset tile, 32x32</title>
+  <path fill="#FFB300" d="M12 5h9v1h-9zM10 6h13v1h-13zM9 7h15v1h-15zM7 8h19v2h-19zM6 10h21v1h-21zM5 11h23v2h-23zM4 13h25v2h-25z"/>
+  <path fill="#FF7A45" d="M4 15h25v4h-25zM4 20h25v2h-25z"/>
+  <path fill="#FF3EA5" d="M5 23h23v1h-23zM6 24h21v1h-21zM7 26h19v1h-19zM9 27h15v1h-15zM12 29h9v1h-9z"/>
+</svg>

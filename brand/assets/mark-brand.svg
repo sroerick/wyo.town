@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" color="#101418">
+  <title>the brand: W over T, aleph over tav</title>
+  <desc>W over T, flat-topped strokes like an iron stamp. Read as a Wyoming ranch brand and as aleph-tav, the first and the last.</desc>
+  <g fill="none" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"
+     stroke-linecap="butt" stroke-miterlimit="12">
+    <path d="M20 26 L38 60 L50 40 L62 60 L80 26"/>
+    <path d="M50 74 V96"/>
+    <path d="M23 74 H77"/>
+  </g>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="256" height="256" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>moon tile, 32x32</title>
+  <path fill="#FFD24A" d="M13 5h2v1h-2zM11 6h3v1h-3zM9 7h5v1h-5zM8 8h5v1h-5zM7 9h6v2h-6zM6 11h7v1h-7zM6 12h6v1h-6zM5 13h8v4h-8zM5 17h9v2h-9zM5 19h10v1h-10zM5 20h11v1h-11zM6 21h11v1h-11zM6 22h13v1h-13zM28 22h1v1h-1zM8 23h15v1h-15zM24 23h4v1h-4zM8 24h20v1h-20zM8 25h19v1h-19zM11 26h15v1h-15zM11 27h13v1h-13zM13 28h9v1h-9zM17 29h1v1h-1z"/>
+  <path fill="#FFFFFF" d="M6 2h1v4h-1zM6 7h1v4h-1zM26 4h1v3h-1zM26 8h1v3h-1zM2 6h9v1h-9zM23 7h7v1h-7zM7 23h1v3h-1zM7 27h1v3h-1zM4 26h7v1h-7z"/>
+</svg>

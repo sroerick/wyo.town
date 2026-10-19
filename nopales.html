@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>Nopales — wyo.town</title>
+<meta name='description' content='Nopales is the language the habitat is written in: a Scheme-family Lisp-1, the one language humans and agents both write.' />
+<link rel='stylesheet' href='brand/fonts/chicago-kare.css' />
+<link rel='stylesheet' href='brand/fonts/sans.css' />
+<link rel='stylesheet' href='brand/fonts/plexmono.css' />
+<link rel='stylesheet' href='brand/fonts/ultra.css' />
+<link rel='stylesheet' href='brand/brand.css' />
+<link rel='stylesheet' href='styles/main.css' />
+<link rel='stylesheet' href='styles/product.css' />
+</head>
+<body>
+
+<canvas class='starfield' data-starfield aria-hidden='true'></canvas>
+
+<svg width='0' height='0' style='position:absolute' aria-hidden='true' focusable='false'>
+  <defs>
+    <symbol id='brand' viewBox='0 0 100 100'>
+      <g fill='none' stroke='currentColor' stroke-width='13' stroke-linejoin='miter'
+         stroke-linecap='butt' stroke-miterlimit='12'>
+        <path d='M20 26 L38 60 L50 40 L62 60 L80 26' />
+        <path d='M50 74 V96' />
+        <path d='M23 74 H77' />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class='banner'></div>
+
+<!-- ===== entry opening ===== -->
+<header class='sheet f-pink entry' id='nopales' style='--accent: var(--lime)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='prod-top'>
+    <a class='prod-wordmark' href='index.html'>
+      <svg class='brand' viewBox='0 0 100 100' width='34' height='34'
+           style='color:var(--ink)' aria-hidden='true'><use href='#brand' /></svg>
+      <span class='sign'>wyo.town</span>
+    </a>
+    <span class='acc'>Catalog &nbsp;/&nbsp; 0002</span>
+  </div>
+
+  <div class='prod-title'>
+    <h1 class='placard placard--xl'>Nopales</h1>
+    <img class='tile' src='brand/assets/tile-pricklypear.svg'
+         alt='T-11, the pricklypear tile: nopales are the pads of the pricklypear' />
+  </div>
+
+  <div class='prod-meta'>
+    <span class='mono'>Entry 0002</span>
+    <span class='mono'>The language</span>
+    <span class='mono'>Lisp-1</span>
+    <span class='mono'>OCaml</span>
+    <span class='mono'>Postgres</span>
+    <span class='mono'>htmx</span>
+  </div>
+</header>
+
+<!-- ===== 1 : the language ===== -->
+<div class='sheet f-snow' id='language' style='--accent: var(--azure)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;1</span>
+    <h2 class='placard'>The language</h2>
+    <span class='acc'>Statement</span>
+  </div>
+
+  <div class='prod-specimen'>
+    <figure class='prod-plate'>
+      <img src='brand/assets/model-taco-spin.gif'
+           alt='a low-poly taco de nopal, spinning' width='512' height='512' />
+    </figure>
+
+    <div class='prod-intro'>
+      <p class='lede'>The language the habitat is written in. Nopales is a Scheme-family Lisp-1,
+      and it is the one language humans and agents both write.</p>
+      <p>A habitat is a single running image: one OCaml process, Postgres as the object store, htmx
+      as the interface. There is no build step between a change and the system, because the process
+      <em>is</em> the API. You and your agents are editing the same live tree.</p>
+      <p>Code is data. Definitions live in branched rows with parent override, so your personal
+      branch is a garden over the system defaults rather than a fork. Effects are capability-gated:
+      an agent&rsquo;s eval carries a mask, so it can compute and propose without reaching for a
+      branch it was not granted.</p>
+      <p>That is the point of giving agents their own language instead of a VM. They can read the
+      system they are running in, and rewrite themselves while it runs.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 2 : the register ===== -->
+<div class='sheet f-terr' id='register' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;2</span>
+    <h2 class='placard'>The register</h2>
+    <span class='acc'>Specification</span>
+  </div>
+
+  <div class='cols-2' style='grid-template-columns:1fr 1fr'>
+    <div class='prod-register'>
+      <div class='spec'><span class='label'>Family</span><span>Scheme-family Lisp-1</span></div>
+      <div class='spec'><span class='label'>Host</span><span>One OCaml process</span></div>
+      <div class='spec'><span class='label'>Store</span><span>Postgres, the object store</span></div>
+      <div class='spec'><span class='label'>Interface</span><span>htmx</span></div>
+    </div>
+    <div class='prod-register'>
+      <div class='spec'><span class='label'>Model</span><span>One running image, no build step</span></div>
+      <div class='spec'><span class='label'>Branches</span><span>Parent override, not a fork</span></div>
+      <div class='spec'><span class='label'>Effects</span><span>Capability-gated eval, by mask</span></div>
+      <div class='spec'><span class='label'>Written by</span><span>Humans and agents</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== closing field ===== -->
+<section class='closing' id='closing'>
+  <svg class='brand' viewBox='0 0 100 100' width='54' height='54'
+       style='color:var(--snow)' aria-hidden='true'><use href='#brand' /></svg>
+  <span class='sign'>wyo.town</span>
+  <p class='placard'>Nopales</p>
+  <a class='back' href='index.html'>Back to the catalog</a>
+</section>
+
+<script src='brand/starfield.js' defer></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="256" height="256" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>starburst tile, 32x32</title>
+  <path fill="#FFB300" d="M15 5h2v3h-2zM15 24h2v3h-2zM14 8h4v2h-4zM14 22h4v2h-4zM13 10h6v1h-6zM13 21h6v1h-6zM12 11h8v1h-8zM12 20h8v1h-8zM11 12h10v1h-10zM11 19h10v1h-10zM10 13h12v1h-12zM10 18h12v1h-12zM8 14h16v1h-16zM8 17h16v1h-16zM5 15h22v2h-22z"/>
+</svg>

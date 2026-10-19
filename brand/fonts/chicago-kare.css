@@ -1,0 +1,9 @@
+/* Chicago Kare - faithful reproduction of the bitmap Chicago typeface
+   created by Susan Kare for Apple Computer, 1984. MIT licensed. */
+@font-face {
+  font-family: 'Chicago Kare';
+  src: url(chicago-kare.woff2) format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}

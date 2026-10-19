@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" color="#101418">
+  <title>v5: bison hook refined, tangent-matched junctions</title>
+  <g fill="none" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"
+     stroke-linecap="butt" stroke-miterlimit="12">
+    <path d="M20 26 L38 60 L50 40 L62 60 L80 26"/>
+    <path d="M50 74 V96"/>
+    <path d="M23 74 H77"/>
+  </g>
+  <g fill="currentColor">
+    <path d="M19.65 39.24 C16.4 33.1 12 26 8.2 18 C5.8 12.5 4.2 5.8 10.5 2.5 C6.5 7.5 7 13.5 10 18.5 C13.5 24 19.5 27.8 25.2 30.2 C27.6 31.4 29.6 32.3 31.15 33.16 Z"/>
+    <path d="M80.35 39.24 C83.6 33.1 88 26 91.8 18 C94.2 12.5 95.8 5.8 89.5 2.5 C93.5 7.5 93 13.5 90 18.5 C86.5 24 80.5 27.8 74.8 30.2 C72.4 31.4 70.4 32.3 68.85 33.16 Z"/>
+  </g>
+</svg>

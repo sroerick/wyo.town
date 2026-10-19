@@ -1,0 +1,433 @@
+/* ============================================================
+   wyo.town identity standards
+   sheet 001 / rev C / streams in the desert
+
+   Typefaces: Chicago Kare (MIT, 1984 bitmap), Ultra (Apache 2.0,
+   American wood type), Instrument Sans, IBM Plex Mono (both OFL).
+   All served locally from brand/fonts.
+   ============================================================ */
+
+:root {
+  /* ---- the sixteen inks, indexed like a hardware palette ---------- */
+  --ink-00: #101418;  /* INK          the night; type and rules            */
+  --ink-01: #F6F5F0;  /* SNOW         the light field                      */
+  --ink-02: #EAD2A0;  /* STOCK        desert sand; archive paper           */
+  --ink-03: #BFBFBF;  /* CHROME       dry bone; dividers, disabled         */
+  --ink-04: #AA3311;  /* RUST         clay and iron                         */
+  --ink-05: #FFB300;  /* AMBER        dry grass; attention                 */
+  --ink-06: #FF7A45;  /* SUNSET       heat on the horizon                  */
+  --ink-07: #FF3EA5;  /* PINK         the fruit of the pear                */
+  --ink-08: #AA00AA;  /* MAGENTA      the fruit, ripe                      */
+  --ink-09: #7A1FA2;  /* PLUM         dusk                                  */
+  --ink-10: #1E6BFF;  /* AZURE        the stream; links, primary field     */
+  --ink-11: #88CCEE;  /* SKY          the rain sky; the cloud field        */
+  --ink-12: #00C2C7;  /* AQUA         spring water                         */
+  --ink-13: #C8F24E;  /* LIME         the pads; attention field            */
+  --ink-14: #0B5D6B;  /* TEAL         deep water                           */
+  --ink-15: #002F6C;  /* TERRITORIAL  deep water at night; deepest field   */
+
+  /* short names for the ones that carry structure */
+  --ink: var(--ink-00);
+  --snow: var(--ink-01);
+  --stock: var(--ink-02);
+  --chrome: var(--ink-03);
+  --rust: var(--ink-04);
+  --amber: var(--ink-05);
+  --sunset: var(--ink-06);
+  --pink: var(--ink-07);
+  --magenta: var(--ink-08);
+  --plum: var(--ink-09);
+  --azure: var(--ink-10);
+  --sky: var(--ink-11);
+  --aqua: var(--ink-12);
+  --lime: var(--ink-13);
+  --teal: var(--ink-14);
+  --territorial: var(--ink-15);
+
+  /* ---- voices --------------------------------------------------- */
+  --placard:  "Chicago Kare", "Chicago", "Silkscreen", monospace;
+  --sign:     "Ultra", "Holtwood One SC", serif;
+  --field:    "Instrument Sans", system-ui, sans-serif;
+  --register: "IBM Plex Mono", monospace;
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--ink); }
+
+body {
+  margin: 0;
+  padding: 26px 18px 60px;
+  background: transparent;   /* the star field shows through the margins */
+  color: var(--ink);
+  font-family: var(--field);
+  font-size: 15px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ------------------------------------------------------------
+   a sheet is a page of the catalog, and a page has one field
+   ------------------------------------------------------------ */
+
+.sheet {
+  position: relative;
+  max-width: 1040px;
+  margin: 0 auto -2px;
+  padding: 40px 48px 52px;
+  background: var(--snow);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+
+.sheet:last-child { margin-bottom: 0; }
+
+.f-ink    { background: var(--ink);         color: var(--snow); }
+.f-azure  { background: var(--azure);       color: var(--snow); }
+.f-terr   { background: var(--territorial); color: var(--snow); }
+.f-teal   { background: var(--teal);        color: var(--snow); }
+.f-lime   { background: var(--lime);        color: var(--ink);  }
+.f-aqua   { background: var(--aqua);        color: var(--ink);  }
+.f-sky    { background: var(--sky);         color: var(--ink);  }
+.f-pink   { background: var(--pink);        color: var(--ink);  }
+.f-stock  { background: var(--stock);       color: var(--ink);  }
+.f-plum   { background: var(--plum);        color: var(--snow); }
+
+/* registration marks, outside the trim */
+.reg { position: absolute; width: 18px; height: 18px; pointer-events: none; }
+.reg::before, .reg::after { content: ""; position: absolute; background: currentColor; }
+.reg::before { left: 50%; top: 0; width: 1px; height: 100%; margin-left: -0.5px; }
+.reg::after  { top: 50%; left: 0; height: 1px; width: 100%; margin-top: -0.5px; }
+.reg--tl { top: -10px; left: -10px; }
+.reg--tr { top: -10px; right: -10px; }
+.reg--bl { bottom: -10px; left: -10px; }
+.reg--br { bottom: -10px; right: -10px; }
+
+/* ------------------------------------------------------------
+   voices
+   ------------------------------------------------------------ */
+
+.placard {
+  font-family: var(--placard);
+  font-size: 32px;
+  line-height: 1.12;
+  margin: 0;
+  font-weight: 400;
+}
+
+.placard--xl { font-size: 64px; line-height: 1; }
+.placard--sm { font-size: 16px; line-height: 1.3; }
+
+.sign {
+  font-family: var(--sign);
+  font-size: 68px;
+  line-height: 0.98;
+  letter-spacing: 0.01em;
+  margin: 0;
+  font-weight: 400;
+}
+
+.sign--xl { font-size: 104px; }
+.sign--sm { font-size: 34px; }
+
+.mono, .label, .acc {
+  font-family: var(--register);
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.mono { font-size: 12px; letter-spacing: 0.04em; }
+.label { font-size: 11px; display: block; }
+.acc { font-size: 10px; letter-spacing: 0.11em; opacity: 0.75; }
+
+.lede { font-size: 16px; max-width: 68ch; margin: 10px 0 0; }
+p { margin: 0 0 10px; }
+
+/* ------------------------------------------------------------
+   rules, ticks, marks: the printed substitute for a hard shadow
+   ------------------------------------------------------------ */
+
+.r-hair { border-top: 1px solid currentColor; }
+.r-heavy { border-top: 4px solid currentColor; }
+.r-hair-2 { border-top: 1px solid currentColor; opacity: 0.45; }
+.r-double { border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; height: 5px; }
+
+.ticks {
+  height: 8px;
+  background: repeating-linear-gradient(90deg, currentColor 0 1px, transparent 1px 7px);
+}
+
+.section-head {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  align-items: baseline;
+  gap: 14px;
+  padding-bottom: 6px;
+  border-bottom: 4px solid currentColor;
+  margin: 0 0 22px;
+}
+
+.section-no { font-family: var(--placard); font-size: 24px; }
+.section-head .placard { font-size: 30px; }
+
+.spec { display: grid; grid-template-columns: 150px 1fr; gap: 20px;
+        padding: 14px 0; border-bottom: 1px solid currentColor; }
+.spec:last-child { border-bottom: 0; }
+.spec .label { opacity: 0.7; }
+
+/* the shoreline: the one permitted texture is a boundary, and a boundary
+   in this landscape is where a desert ink meets a stream ink. A gradient,
+   if one is ever drawn, is flat bands, never a blend. */
+.dither-edge {
+  height: 8px;
+  background-image: repeating-conic-gradient(currentColor 0 25%, transparent 0 50%);
+  background-size: 8px 8px;
+  opacity: 0.85;
+}
+
+/* ------------------------------------------------------------
+   the mark
+   ------------------------------------------------------------ */
+
+.lockup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 34px 38px;
+  background: var(--azure);
+  color: var(--snow);
+}
+
+.lockup--board { background: var(--territorial); }
+.lockup--plain { background: var(--snow); color: var(--ink); border: 2px solid var(--ink); }
+.lockup--lime  { background: var(--lime); color: var(--ink); }
+
+.brand { display: block; }
+.pep-ink { color: var(--ink); }
+.pep-snow { color: var(--snow); }
+.pep-rust { color: var(--rust); }
+.pep-amber { color: var(--amber); }
+
+/* the sign over the door */
+.board {
+  display: grid;
+  place-items: center;
+  gap: 12px;
+  padding: 30px 20px 26px;
+  background: var(--plum);
+  color: var(--snow);
+  border: 2px solid var(--ink);
+}
+
+.board .brand { width: 54px; height: 54px; }
+
+/* ------------------------------------------------------------
+   the inks page
+   ------------------------------------------------------------ */
+
+.inks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  background: currentColor;
+  border: 1px solid currentColor;
+}
+
+.ink-cell { background: var(--snow); color: var(--ink); }
+.ink-chip { height: 60px; display: flex; align-items: flex-end; padding: 6px 8px; }
+.ink-meta { padding: 7px 8px 9px; border-top: 1px solid var(--ink); }
+.ink-name { font-family: var(--register); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; }
+.ink-note { font-size: 11.5px; line-height: 1.3; opacity: 0.75; }
+
+/* pairing table */
+.pairs { width: 100%; border-collapse: collapse; font-family: var(--register); font-size: 12px; }
+.pairs th { text-align: left; text-transform: uppercase; letter-spacing: 0.08em; font-size: 10px;
+            border-bottom: 2px solid currentColor; padding: 6px 8px 4px; font-weight: 400; }
+.pairs td { border-bottom: 1px solid currentColor; padding: 5px 8px; }
+.pairs .sw { display: inline-block; width: 12px; height: 12px; vertical-align: -2px;
+             margin-right: 6px; border: 1px solid var(--ink); }
+
+/* ------------------------------------------------------------
+   tiles: the ornament, shown as specimens
+   ------------------------------------------------------------ */
+
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: currentColor;
+  border: 1px solid currentColor;
+}
+
+.specimen { background: var(--snow); color: var(--ink); padding: 10px; }
+.specimen img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+.specimen .acc { margin-top: 8px; display: block; }
+.specimen .sname { display: block; font-family: var(--register); font-size: 11.5px;
+                   text-transform: uppercase; letter-spacing: 0.06em; }
+.specimen .snote { display: block; font-size: 11px; line-height: 1.3; opacity: 0.8; margin-top: 2px; }
+
+/* the single square, next to things */
+.tile-inline { display: flex; align-items: center; gap: 16px; }
+.tile-inline img { display: block; image-rendering: pixelated; flex: none; }
+
+.repeat { display: flex; border: 1px solid var(--ink); width: max-content; }
+.repeat img { display: block; image-rendering: pixelated; }
+
+.frame-strip { border: 1px solid var(--ink); background: var(--snow); width: max-content; }
+.frame-strip img { display: block; image-rendering: pixelated; }
+
+/* ------------------------------------------------------------
+   the two registers: a museum label and a catalog line
+   ------------------------------------------------------------ */
+
+.mlabel {
+  background: var(--snow);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 16px 18px 18px;
+}
+.mlabel .acc { display: block; margin-bottom: 8px; }
+.mlabel .mtitle { font-family: var(--placard); font-size: 22px; line-height: 1.15; }
+.mlabel .mbody { font-size: 12.5px; line-height: 1.45; margin-top: 8px; }
+.mlabel .mcredit { font-family: var(--register); font-size: 10.5px; letter-spacing: 0.05em;
+                   margin-top: 10px; opacity: 0.8; text-transform: uppercase; }
+
+.line-item {
+  display: grid;
+  grid-template-columns: 104px 1fr 122px;
+  background: var(--snow);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+}
+.line-item .shot { border-right: 1px solid var(--ink); padding: 10px; background: var(--stock); }
+.line-item .shot img { display: block; width: 100%; image-rendering: pixelated; }
+.line-item .body { padding: 14px 16px 16px; }
+.line-item .side { border-left: 1px solid var(--ink); padding: 14px 12px; background: var(--stock);
+                   display: flex; flex-direction: column; gap: 8px; }
+.line-item .item-name { font-family: var(--placard); font-size: 26px; line-height: 1.1; margin: 4px 0 6px; }
+.line-item .item-desc { font-size: 13.5px; line-height: 1.4; }
+.line-item .specs { font-family: var(--register); font-size: 10.5px; letter-spacing: 0.03em;
+                    text-transform: uppercase; margin-top: 10px; opacity: 0.8; line-height: 1.6; }
+.line-item .big-no { font-family: var(--placard); font-size: 30px; line-height: 1; }
+
+/* ------------------------------------------------------------
+   the two column ledger
+   ------------------------------------------------------------ */
+
+.usage { display: grid; grid-template-columns: 1fr 1fr; gap: 0 36px; }
+.usage-col h3 { font-family: var(--register); font-size: 11px; letter-spacing: 0.09em;
+                text-transform: uppercase; padding-bottom: 5px;
+                border-bottom: 1px solid currentColor; margin: 0 0 10px; font-weight: 400; }
+.usage-col ol { margin: 0; padding-left: 20px; font-size: 14px; }
+.usage-col li { margin-bottom: 5px; }
+.usage-col--never ol { list-style: "\00d7  "; }
+
+.cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; align-items: start; }
+.cols-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+.stack > * + * { margin-top: 12px; }
+
+/* ----------------------------------------------------------------------------
+   the banner, the photograph, the field
+   a tile may repeat inside a bounded band, never as a field.
+   a photograph may repeat four up, at a fixed size.
+   the star field is drawn live behind the sheet, never as a tile.
+   ---------------------------------------------------------------------------- */
+
+.banner {
+  height: 128px;
+  max-width: 1040px;
+  margin: 0 auto -2px;
+  border: 2px solid var(--ink);
+  border-bottom: 0;
+  background-image: url(assets/tile-cloud.svg);
+  background-size: 128px 128px;   /* the tile itself, square, at scale */
+  background-repeat: repeat-x;
+}
+
+.banner-strip {
+  height: 60px;
+  border: 1px solid var(--ink);
+  background-image: url(assets/tile-cloud.svg);
+  background-size: 60px 60px;
+  background-repeat: repeat-x;
+}
+
+.photo-tile {
+  display: block;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 1px solid var(--ink);
+}
+.photo-tile--band { height: 128px; }
+
+/* ------------------------------------------------------------
+   the star field
+   The one thing that moves. A win95-style field of flat pixel
+   stars, fixed behind the catalog so it shows in the margins and
+   fills the closing field at the foot of the page. The sheets are
+   opaque pages, so the field never sits behind content.
+   ------------------------------------------------------------ */
+
+.starfield {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* the closing field: no sheet, just the night and the wordmark */
+.closing {
+  position: relative;
+  max-width: 1040px;
+  min-height: 78vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 40px 18px;
+  color: var(--snow);
+  text-align: center;
+}
+
+.closing .sign { font-size: 104px; }
+
+.closing .placard { font-size: 34px; }
+
+/* sixteen tiles read better as four by four */
+.board-grid { grid-template-columns: repeat(4, 1fr); }
+
+@media print {
+  body { background: #fff; padding: 0; }
+  .sheet { border: 0; max-width: none; margin: 0; }
+}
+
+@media (max-width: 880px) {
+  body { padding: 12px 8px 40px; font-size: 14.5px; }
+  .sheet { padding: 24px 18px 32px; }
+  .placard--xl { font-size: 40px; }
+  .placard { font-size: 24px; }
+  .sign { font-size: 40px; }
+  .sign--xl { font-size: 56px; }
+  .section-head { grid-template-columns: 48px 1fr; }
+  .section-head .acc { display: none; }
+  .inks { grid-template-columns: 1fr 1fr; }
+  .board-grid { grid-template-columns: 1fr 1fr; }
+  .cols-2, .cols-3, .usage { grid-template-columns: 1fr; gap: 20px; }
+  .spec { grid-template-columns: 1fr; gap: 4px; }
+  .line-item { grid-template-columns: 1fr; }
+  .line-item .shot { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .line-item .side { border-left: 0; border-top: 1px solid var(--ink); }
+  .pairs { font-size: 11px; }
+  .repeat, .frame-strip { width: auto; }
+  .repeat img { width: 25%; }
+  .closing { min-height: 66vh; }
+  .closing .sign { font-size: 56px; }
+  .closing .placard { font-size: 22px; }
+}

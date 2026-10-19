@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" color="#101418">
+  <title>v4: longhorn side-sweep</title>
+  <g fill="none" stroke="currentColor" stroke-width="13" stroke-linejoin="miter"
+     stroke-linecap="butt" stroke-miterlimit="12">
+    <path d="M20 26 L38 60 L50 40 L62 60 L80 26"/>
+    <path d="M50 74 V96"/>
+    <path d="M23 74 H77"/>
+  </g>
+  <g fill="currentColor">
+    <path d="M19.65 39.24 C14 40 7 39 5 34 C3.5 29 4 22 5.5 16 C7 9.5 8 5 13 2.5 C9.5 6 8.2 11 8.2 16.5 C8.2 22 10 27 13.5 30.5 C18 34.5 24 34.5 28 33 C29.5 32.9 30.4 33 31.15 33.16 Z"/>
+    <path d="M80.35 39.24 C86 40 93 39 95 34 C96.5 29 96 22 94.5 16 C93 9.5 92 5 87 2.5 C90.5 6 91.8 11 91.8 16.5 C91.8 22 90 27 86.5 30.5 C82 34.5 76 34.5 72 33 C70.5 32.9 69.6 33 68.85 33.16 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,254 @@
+/* ============================================================
+   wyo.town / product entry
+   Layered on brand/brand.css (sheet 001, rev C). This file adds
+   only the components a product page needs: the entry opening,
+   the specimen and its intro, and the likeness ledger.
+
+   House rules held here:
+     - one field per sheet, one accent per sheet
+     - the accent is the one the pairing table gives that field
+     - rules, not shadows; dither is the only texture
+     - type is ink or snow, never a third color per sheet
+   ============================================================ */
+
+a { color: inherit; }
+
+/* ------------------------------------------------------------
+   the entry opening: the wordmark on the left of the register
+   line, the entry number on the right, then the product name and
+   the single tile that stands beside it.
+   ------------------------------------------------------------ */
+
+.prod-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 16px;
+  border-bottom: 4px solid currentColor;
+}
+
+.prod-wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.prod-wordmark .sign { font-size: 30px; }
+.prod-wordmark .brand { width: 34px; height: 34px; }
+
+.prod-top .acc { margin-left: auto; opacity: 1; }
+
+.prod-title {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 24px;
+  padding: 36px 0 4px;
+}
+
+.prod-title .placard--xl { line-height: 0.94; }
+.prod-title .tile {
+  display: block;
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+  border: 1px solid currentColor;
+  background: var(--snow);
+}
+
+.prod-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid currentColor;
+}
+
+.prod-meta .mono { opacity: 0.8; }
+
+.prod-title a { text-decoration: none; }
+
+/* ------------------------------------------------------------
+   the specimen: the model shown once, framed, beside the
+   paragraph that says what the thing is. The plate is a printed
+   specimen, so it gets the flat chrome field rather than a
+   cut-out.
+   ------------------------------------------------------------ */
+
+.prod-specimen {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 38px;
+  align-items: start;
+}
+
+.prod-plate {
+  margin: 0;
+  padding: 0;
+  border: 2px solid currentColor;
+  background: var(--chrome);
+  line-height: 0;
+}
+
+.prod-plate img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.prod-intro p { margin: 0 0 12px; max-width: 62ch; }
+.prod-intro p:last-child { margin-bottom: 0; }
+.prod-intro .lede { font-size: 17px; }
+
+/* the register of a specimen: the spec lines, no plate */
+.prod-register { margin: 0; }
+.prod-register .spec:last-child { border-bottom: 0; }
+.prod-register .label { opacity: 0.7; }
+
+/* ------------------------------------------------------------
+   the likeness ledger: eight comparisons, numbered like a
+   catalog. The number is the accent; the body is type ink.
+   ------------------------------------------------------------ */
+
+.likenesses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  border-top: 1px solid currentColor;
+}
+
+/* three across, for a short list like three phases */
+.likenesses--3 { grid-template-columns: repeat(3, 1fr); }
+
+.likeness {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 18px;
+  align-content: start;
+  padding: 20px 0 22px;
+  border-bottom: 1px solid currentColor;
+}
+
+.likeness-no {
+  font-family: var(--placard);
+  font-size: 34px;
+  line-height: 1;
+  color: var(--accent, currentColor);
+}
+
+.likeness-body {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.likeness-body strong { font-weight: 600; }
+
+/* ------------------------------------------------------------
+   the closing field carries the way back to the catalog
+   ------------------------------------------------------------ */
+
+.closing .back {
+  font-family: var(--register);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 2px;
+}
+
+/* ------------------------------------------------------------
+   the closing grove
+   Instead of the night starfield, this page closes in daylight: a
+   cloud banner, then a stand of the plant and its glyph twin on
+   sand, all swaying. Twelve models in two beds — the swaying GIFs
+   and the still PNG fallback — sharing positions, set by nth-child.
+   The row bleeds past the sheet edges, so the grove reads as a
+   stand that continues beyond the frame.
+   ------------------------------------------------------------ */
+
+.grove { overflow: hidden; padding-bottom: 0; }
+
+.grove-sign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.grove-sign .sign { font-size: 72px; line-height: 1; }
+.grove-sign .placard { font-size: 30px; }
+
+.grove-bed {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 340px;
+  margin: 0 -48px -6px;    /* bleed to the trim, planted on the base */
+}
+
+.grove-bed img {
+  flex: 0 0 auto;
+  display: block;
+  height: auto;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* the stand: green pricklypears one to six (a hedge — solids tolerate
+   overlap), then a gap, then glyph pricklypears seven to twelve (spaced
+   with air — crossing parens read as a mistake). Later siblings paint in
+   front. */
+.grove-bed img:nth-child(1)  { width: 150px; margin: 0 -46px 6px 0;   z-index: 2; }
+.grove-bed img:nth-child(2)  { width: 112px; margin: 0 -46px 96px 0;  z-index: 1; }
+.grove-bed img:nth-child(3)  { width: 188px; margin: 0 -46px 0 0;     z-index: 4; }
+.grove-bed img:nth-child(4)  { width: 126px; margin: 0 -46px 62px 0;  z-index: 3; }
+.grove-bed img:nth-child(5)  { width: 204px; margin: 0 -46px 0 0;     z-index: 6; }
+.grove-bed img:nth-child(6)  { width: 122px; margin: 0 30px 88px 0;   z-index: 5; }
+.grove-bed img:nth-child(7)  { width: 152px; margin: 0 -10px 0 0;     z-index: 8; }
+.grove-bed img:nth-child(8)  { width: 116px; margin: 0 -10px 108px 0; z-index: 7; }
+.grove-bed img:nth-child(9)  { width: 186px; margin: 0 -10px 0 0;     z-index: 10; }
+.grove-bed img:nth-child(10) { width: 128px; margin: 0 -10px 70px 0;  z-index: 9; }
+.grove-bed img:nth-child(11) { width: 168px; margin: 0 -10px 0 0;     z-index: 12; }
+.grove-bed img:nth-child(12) { width: 122px; margin: 0 0 96px 0;      z-index: 11; }
+
+/* the still bed is the reduced-motion fallback; the sway is the default */
+.grove-bed--still { display: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .grove-bed--sway { display: none; }
+  .grove-bed--still { display: flex; }
+}
+
+/* ------------------------------------------------------------
+   responsive
+   ------------------------------------------------------------ */
+
+@media (max-width: 880px) {
+  .prod-title { grid-template-columns: 1fr auto; gap: 16px; padding-top: 26px; }
+  .prod-title .placard--xl { font-size: 44px; }
+  .prod-title .tile { width: 64px; height: 64px; }
+  .prod-specimen { grid-template-columns: 1fr; gap: 24px; }
+  .prod-plate { max-width: 320px; }
+  .prod-wordmark .sign { font-size: 24px; }
+  .likenesses { grid-template-columns: 1fr; gap: 0; }
+  .grove-bed { height: 250px; margin: 0 -18px -6px; }
+  .grove-bed img { margin: 0 -22px; }
+  .grove-sign .sign { font-size: 52px; }
+  .grove-sign .placard { font-size: 24px; }
+}
+
+@media (max-width: 560px) {
+  .prod-title .placard--xl { font-size: 34px; }
+  .prod-title .tile { width: 52px; height: 52px; }
+  .likeness-no { font-size: 28px; }
+  .grove-bed { height: 190px; }
+  .grove-bed img { margin: 0 -16px; }
+  .grove-sign .sign { font-size: 40px; }
+}

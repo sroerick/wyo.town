@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="128" height="128" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>strata tile, 16x16</title>
+  <rect width="16" height="16" fill="#EAD2A0"/>
+  <path fill="#FF7A45" d="M0 3h16v2h-16zM0 13h16v1h-16zM0 5h5v1h-5zM7 5h9v1h-9zM2 12h14v1h-14z"/>
+  <path fill="#FFB300" d="M5 5h2v1h-2zM0 6h16v1h-16zM0 7h11v1h-11zM13 7h3v1h-3z"/>
+  <path fill="#AA3311" d="M11 7h2v1h-2zM0 8h16v4h-16zM0 12h2v1h-2z"/>
+</svg>

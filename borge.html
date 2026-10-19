@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>Borge — wyo.town</title>
+<meta name='description' content='Borge is a spec-driven code orchestrator that keeps the plan and the code in step: the specification is the source of truth, and alignment is mechanical.' />
+<link rel='stylesheet' href='brand/fonts/chicago-kare.css' />
+<link rel='stylesheet' href='brand/fonts/sans.css' />
+<link rel='stylesheet' href='brand/fonts/plexmono.css' />
+<link rel='stylesheet' href='brand/fonts/ultra.css' />
+<link rel='stylesheet' href='brand/brand.css' />
+<link rel='stylesheet' href='styles/main.css' />
+<link rel='stylesheet' href='styles/product.css' />
+</head>
+<body>
+
+<canvas class='starfield' data-starfield aria-hidden='true'></canvas>
+
+<svg width='0' height='0' style='position:absolute' aria-hidden='true' focusable='false'>
+  <defs>
+    <symbol id='brand' viewBox='0 0 100 100'>
+      <g fill='none' stroke='currentColor' stroke-width='13' stroke-linejoin='miter'
+         stroke-linecap='butt' stroke-miterlimit='12'>
+        <path d='M20 26 L38 60 L50 40 L62 60 L80 26' />
+        <path d='M50 74 V96' />
+        <path d='M23 74 H77' />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class='banner'></div>
+
+<!-- ===== entry opening ===== -->
+<header class='sheet f-teal entry' id='borge' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='prod-top'>
+    <a class='prod-wordmark' href='index.html'>
+      <svg class='brand' viewBox='0 0 100 100' width='34' height='34'
+           style='color:var(--snow)' aria-hidden='true'><use href='#brand' /></svg>
+      <span class='sign'>wyo.town</span>
+    </a>
+    <span class='acc'>Catalog &nbsp;/&nbsp; 0007</span>
+  </div>
+
+  <div class='prod-title'>
+    <h1 class='placard placard--xl'>Borge</h1>
+  </div>
+
+  <div class='prod-meta'>
+    <span class='mono'>Entry 0007</span>
+    <span class='mono'>The spec engine</span>
+    <span class='mono'>Spec-driven</span>
+    <span class='mono'>Phase-gated</span>
+    <span class='mono'>.borg</span>
+  </div>
+</header>
+
+<!-- ===== 1 : the specification ===== -->
+<div class='sheet f-snow' id='specification' style='--accent: var(--azure)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;1</span>
+    <h2 class='placard'>The specification</h2>
+    <span class='acc'>Statement</span>
+  </div>
+
+  <div class='entry-prose entry-prose--wide'>
+    <p class='lede'>A spec-driven code orchestrator that keeps the plan and the code in step.</p>
+    <p>Borge treats the specification as the source of truth. Every file is a
+    <span class='mono'>.borg</span> s-expression, git-tracked and inlined into a project tree; no
+    module gets a section after it is written. Alignment is mechanical, not a matter of vibes.</p>
+  </div>
+</div>
+
+<!-- ===== 2 : the phases ===== -->
+<div class='sheet f-ink' id='phases' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;2</span>
+    <h2 class='placard'>The phases</h2>
+    <span class='acc'>Work is phase-gated</span>
+  </div>
+
+  <div class='likenesses likenesses--3'>
+    <div class='likeness'>
+      <span class='likeness-no'>01</span>
+      <p class='likeness-body'><span class='mono'>plan</span> &mdash; the agent may edit only
+      spec files.</p>
+    </div>
+    <div class='likeness'>
+      <span class='likeness-no'>02</span>
+      <p class='likeness-body'><span class='mono'>make</span> &mdash; the agent may edit only
+      code.</p>
+    </div>
+    <div class='likeness'>
+      <span class='likeness-no'>03</span>
+      <p class='likeness-body'><span class='mono'>review</span> &mdash; it runs drift, lint, and
+      check.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 3 : the register ===== -->
+<div class='sheet f-terr' id='register' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;3</span>
+    <h2 class='placard'>The register</h2>
+    <span class='acc'>Specification</span>
+  </div>
+
+  <div class='cols-2' style='grid-template-columns:1fr 1fr'>
+    <div class='prod-register'>
+      <div class='spec'><span class='label'>Kind</span><span>Code orchestrator</span></div>
+      <div class='spec'><span class='label'>Model</span><span>Spec-driven</span></div>
+      <div class='spec'><span class='label'>Truth</span><span>The specification</span></div>
+      <div class='spec'><span class='label'>File</span><span>A <span class='mono'>.borg</span> s-expression</span></div>
+    </div>
+    <div class='prod-register'>
+      <div class='spec'><span class='label'>Tracking</span><span>Git-tracked, inlined into a project tree</span></div>
+      <div class='spec'><span class='label'>Phases</span><span><span class='mono'>plan</span>, <span class='mono'>make</span>, <span class='mono'>review</span></span></div>
+      <div class='spec'><span class='label'>Book</span><span><span class='mono'>borge book</span></span></div>
+      <div class='spec'><span class='label'>Reads</span><span>Paginated PDF, line numbers, wide margins</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== closing field ===== -->
+<section class='closing' id='closing'>
+  <svg class='brand' viewBox='0 0 100 100' width='54' height='54'
+       style='color:var(--snow)' aria-hidden='true'><use href='#brand' /></svg>
+  <span class='sign'>wyo.town</span>
+  <p class='placard'>Borge</p>
+  <a class='back' href='index.html'>Back to the catalog</a>
+</section>
+
+<script src='brand/starfield.js' defer></script>
+</body>
+</html>

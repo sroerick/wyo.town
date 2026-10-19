@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="256" height="256" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>trout tile, 32x32</title>
+  <path fill="#0B5D6B" d="M15 8h1v1h-1zM14 9h3v1h-3zM12 10h7v1h-7zM11 11h3v1h-3zM15 11h5v1h-5zM8 12h3v1h-3zM12 12h3v1h-3zM17 12h4v1h-4zM22 12h1v1h-1zM29 12h1v1h-1zM29 19h1v1h-1zM28 13h1v1h-1zM28 18h1v1h-1zM13 21h1v1h-1z"/>
+  <path fill="#88CCEE" d="M6 13h11v1h-11zM18 13h2v1h-2zM22 13h3v1h-3zM5 14h2v1h-2zM8 14h12v1h-12zM21 14h5v1h-5zM5 15h9v1h-9zM15 15h6v1h-6zM22 15h4v1h-4zM6 16h20v1h-20zM6 17h19v1h-19zM11 18h12v1h-12zM11 19h9v1h-9zM12 20h3v1h-3z"/>
+  <path fill="#FF7A45" d="M8 18h3v1h-3z"/>
+  <path fill="#101418" d="M14 11h1v1h-1zM14 15h1v1h-1zM11 12h1v1h-1zM15 12h2v1h-2zM21 12h1v1h-1zM21 15h1v1h-1zM17 13h1v1h-1zM20 13h2v1h-2zM7 14h1v1h-1zM20 14h1v1h-1z"/>
+  <path fill="#101418" d="M15 7h1v1h-1zM14 8h1v1h-1zM14 21h1v1h-1zM14 23h1v1h-1zM16 8h1v1h-1zM12 9h2v1h-2zM17 9h2v1h-2zM11 10h1v1h-1zM11 20h1v1h-1zM19 10h1v1h-1zM30 10h1v1h-1zM30 12h1v1h-1zM30 19h1v1h-1zM30 21h1v1h-1zM8 11h3v1h-3zM8 19h3v1h-3zM20 11h3v1h-3zM20 19h3v1h-3zM29 11h2v1h-2zM29 13h2v1h-2zM29 18h2v1h-2zM29 20h2v1h-2zM6 12h2v1h-2zM6 18h2v1h-2zM23 12h2v1h-2zM23 18h2v1h-2zM28 12h1v1h-1zM28 19h1v1h-1zM5 13h1v1h-1zM5 16h1v2h-1zM25 13h1v1h-1zM27 13h1v1h-1zM27 18h1v1h-1zM3 14h2v2h-2zM26 14h3v1h-3zM26 15h1v2h-1zM25 17h4v1h-4zM15 20h5v1h-5zM12 21h1v1h-1zM13 22h2v1h-2z"/>
+</svg>

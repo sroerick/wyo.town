@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="128" height="128" preserveAspectRatio="none" shape-rendering="crispEdges">
+  <title>ripple tile</title>
+  <rect width="16" height="16" fill="#BCE8F0"/>
+  <path fill="#2E8FA8" d="M11 3h3v1h-3zM10 4h5v1h-5zM9 5h7v1h-7zM9 6h2v1h-2zM14 6h2v1h-2zM0 7h1v2h-1zM8 7h2v1h-2zM15 7h1v1h-1zM8 8h1v1h-1zM0 9h2v1h-2zM7 9h2v1h-2zM1 10h2v1h-2zM6 10h2v1h-2zM1 11h7v1h-7zM2 12h5v1h-5zM3 13h3v1h-3z"/>
+</svg>
