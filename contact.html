@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>Contact — wyo.town</title>
+<meta name='description' content='Write to wyo.town: one mailbox, read by a person. What engaging with us looks like for small and medium businesses adopting Super Intelligence.' />
+<link rel='stylesheet' href='brand/fonts/chicago-kare.css' />
+<link rel='stylesheet' href='brand/fonts/sans.css' />
+<link rel='stylesheet' href='brand/fonts/plexmono.css' />
+<link rel='stylesheet' href='brand/fonts/ultra.css' />
+<link rel='stylesheet' href='brand/brand.css' />
+<link rel='stylesheet' href='styles/main.css' />
+<link rel='stylesheet' href='styles/product.css' />
+</head>
+<body>
+
+<canvas class='starfield' data-starfield aria-hidden='true'></canvas>
+
+<svg width='0' height='0' style='position:absolute' aria-hidden='true' focusable='false'>
+  <defs>
+    <symbol id='brand' viewBox='0 0 100 100'>
+      <g fill='none' stroke='currentColor' stroke-width='13' stroke-linejoin='miter'
+         stroke-linecap='butt' stroke-miterlimit='12'>
+        <path d='M20 26 L38 60 L50 40 L62 60 L80 26' />
+        <path d='M50 74 V96' />
+        <path d='M23 74 H77' />
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class='banner'></div>
+
+<!-- ===== entry opening ===== -->
+<header class='sheet f-terr entry' id='contact' style='--accent: var(--amber)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='prod-top'>
+    <a class='prod-wordmark' href='index.html'>
+      <svg class='brand' viewBox='0 0 100 100' width='34' height='34'
+           style='color:var(--ink)' aria-hidden='true'><use href='#brand' /></svg>
+      <span class='sign'>wyo.town</span>
+    </a>
+    <span class='acc'>Catalog &nbsp;/&nbsp; Contact</span>
+  </div>
+
+  <div class='prod-title'>
+    <h1 class='placard placard--xl'>Contact</h1>
+  </div>
+
+  <div class='prod-meta'>
+    <span class='mono'>No forms</span>
+    <span class='mono'>No sales pipeline</span>
+    <span class='mono'>One mailbox</span>
+  </div>
+</header>
+
+<!-- ===== 1 : write to us ===== -->
+<div class='sheet f-snow' id='write' style='--accent: var(--azure)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;1</span>
+    <h2 class='placard'>Write to us</h2>
+    <span class='acc'>Statement</span>
+  </div>
+
+  <div class='prod-register'>
+    <div class='spec'><span class='label'>Email</span><span><a href='mailto:roerick@wyo.town'>roerick@wyo.town</a></span></div>
+    <div class='spec'><span class='label'>Read by</span><span>A person, not a ticketing system</span></div>
+    <div class='spec'><span class='label'>Reply</span><span>Usually within a day</span></div>
+  </div>
+
+  <p class='lede' style='margin-top:28px'>Tell us what you do and where you are stuck.</p>
+  <p>That is the whole intake process. No form fields, no discovery call with a calendar
+  link, no booking a slot. You write, a person reads it, and a person writes back.</p>
+  <p>If you already know which entry in the catalog you want to talk about, say so. If you
+  do not, say that instead &mdash; &ldquo;we are a five-person shop and we think we should
+  be using this stuff somewhere&rdquo; is a perfectly good opening line.</p>
+</div>
+
+<!-- ===== 2 : what engaging looks like ===== -->
+<div class='sheet f-stock' id='engaging' style='--accent: var(--rust)'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+
+  <div class='section-head'>
+    <span class='section-no'>&sect;2</span>
+    <h2 class='placard'>What engaging looks like</h2>
+    <span class='acc'>Small and medium business</span>
+  </div>
+
+  <p class='lede'>We work with you at any stage of adoption. In practice it goes like this:</p>
+
+  <div class='likenesses'>
+    <div class='likeness'>
+      <span class='likeness-no'>1</span>
+      <p class='likeness-body'><strong>A conversation.</strong> Email back and forth until we
+      both know what the problem is. No deck required.</p>
+    </div>
+    <div class='likeness'>
+      <span class='likeness-no'>2</span>
+      <p class='likeness-body'><strong>A working session.</strong> We sit with your team &mdash;
+      remotely or in Wyoming &mdash; and map where Super Intelligence actually fits your work.</p>
+    </div>
+    <div class='likeness'>
+      <span class='likeness-no'>3</span>
+      <p class='likeness-body'><strong>Building alongside.</strong> We help your team tokenmax,
+      spend sensibly, and build the thing. Your people stay in the loop at every step.</p>
+    </div>
+    <div class='likeness'>
+      <span class='likeness-no'>4</span>
+      <p class='likeness-body'><strong>Sovereignty.</strong> What we build for you runs on your
+      infrastructure. You own the stack, the data, and the keys when we are done.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== closing field ===== -->
+<section class='closing' id='closing'>
+  <svg class='brand' viewBox='0 0 100 100' width='54' height='54'
+       style='color:var(--snow)' aria-hidden='true'><use href='#brand' /></svg>
+  <span class='sign'>wyo.town</span>
+  <p class='placard'>Contact</p>
+  <p class='mono closing-contact'><a href='mailto:roerick@wyo.town'>roerick@wyo.town</a></p>
+  <a class='back' href='index.html'>Back to the catalog</a>
+</section>
+
+<script src='brand/starfield.js' defer></script>
+</body>
+</html>
