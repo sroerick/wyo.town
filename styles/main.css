@@ -240,6 +240,15 @@ html { overflow-x: clip; }
   padding: 64px 18px;
 }
 
+.closing-contact {
+  margin-top: 14px;
+  letter-spacing: 0.06em;
+}
+
+.closing-contact a {
+  color: inherit;
+}
+
 /* ------------------------------------------------------------
    responsive
    ------------------------------------------------------------ */
