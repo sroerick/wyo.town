@@ -384,7 +384,8 @@ p { margin: 0 0 10px; }
 .closing {
   position: relative;
   max-width: 1040px;
-  min-height: 78vh;
+  min-height: 100vh;
+  min-height: 100svh;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -427,7 +428,6 @@ p { margin: 0 0 10px; }
   .pairs { font-size: 11px; }
   .repeat, .frame-strip { width: auto; }
   .repeat img { width: 25%; }
-  .closing { min-height: 66vh; }
   .closing .sign { font-size: 56px; }
   .closing .placard { font-size: 22px; }
 }

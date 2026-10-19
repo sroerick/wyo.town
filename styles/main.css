@@ -231,15 +231,6 @@ html { overflow-x: clip; }
 .entry-prose .lede { font-size: 17px; max-width: 60ch; }
 .entry-prose--wide { max-width: 74ch; }
 
-/* ------------------------------------------------------------
-   the closing field: a footer, not a second screen
-   ------------------------------------------------------------ */
-
-.closing {
-  min-height: 44vh;
-  padding: 64px 18px;
-}
-
 .closing-contact {
   margin-top: 14px;
   letter-spacing: 0.06em;
