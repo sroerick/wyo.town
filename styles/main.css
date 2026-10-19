@@ -258,7 +258,7 @@ html { overflow-x: clip; }
   .mast-copy .sign { font-size: 52px; }
   .mast-bottom { padding-left: 150px; flex-direction: column; align-items: flex-start; padding-right: 0; }
   .mast-cactus { width: 110px; max-width: none; bottom: 0; }
-  .mast-saguaro { left: -80px; width: 230px; max-width: none; bottom: 0; }
+  .mast-saguaro { left: -90px; width: 320px; max-width: none; bottom: 0; }
   .mast-fish { top: -72px; right: 84px; width: 100px; max-width: none; }
   .mast-tuna { top: -54px; left: 196px; width: 60px; max-width: none; }
   .manifesto { grid-template-columns: 1fr; gap: 0; }
@@ -270,7 +270,7 @@ html { overflow-x: clip; }
   .mast-copy .sign { font-size: 40px; }
   .masthead .mast { padding-left: 100px; }
   .mast-cactus { width: 85px; max-width: none; }
-  .mast-saguaro { left: -60px; width: 175px; max-width: none; }
+  .mast-saguaro { left: -80px; width: 260px; max-width: none; }
   .mast-fish { top: -64px; right: 56px; width: 72px; max-width: none; }
   .mast-tuna { top: -40px; left: 152px; width: 44px; max-width: none; }
   .mast-bottom { padding-left: 100px; padding-right: 0; }
