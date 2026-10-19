@@ -54,7 +54,7 @@ The six product pages share `brand/brand.css`, `styles/main.css` and
   pricklypear standing in the sand at the right (the swaying models, in
   place of the old pepper glyph). Two things drift through the banner sky:
   the pufferfish on the right and the tuna can on the left.
-- **§1 The town** — the statement ("This Town Is Big Enough For All Of Us")
+- **§1 time to get a little western** — the statement ("This Town Is Big Enough For All Of Us")
   and the research-lab paragraph.
 - **§2 Our approach** — four numbered steps for small and medium businesses:
   1. SI Literacy · 2. Token Efficiency · 3. Build · 4. Sovereignty.
