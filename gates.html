@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8' />
+<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+<title>wyo.town &mdash; the fence</title>
+<link rel='stylesheet' href='brand/fonts/sans.css' />
+<link rel='stylesheet' href='brand/fonts/plexmono.css' />
+<link rel='stylesheet' href='brand/brand.css' />
+<link rel='stylesheet' href='styles/main.css' />
+<style>
+.letter-body{max-width:44rem;margin:0 auto;padding:72px 18px;}
+.letter-line{font-size:1.1rem;line-height:1.65;margin:0 0 1.4em;}
+.rec-table{width:100%;border-collapse:collapse;margin:0 0 1.6em;}
+.rec-table td{padding:6px 10px;border-bottom:1px solid var(--border);font-size:0.95rem;vertical-align:top;}
+.mono{font-family:'IBM Plex Mono','Courier New',monospace;}
+</style>
+</head>
+<body>
+<canvas class='starfield' data-starfield aria-hidden='true'></canvas>
+<div class='banner'></div>
+
+<div class='sheet f-plum'>
+  <span class='reg reg--tl'></span><span class='reg reg--tr'></span>
+  <span class='reg reg--bl'></span><span class='reg reg--br'></span>
+  <div class='letter-body'>
+    <p class='mono mast-meta'><a href='index.html'>&larr; wyo.town</a></p>
+    <p class='letter-line sign'>The fence.</p>
+    <p class='letter-line'>Everyone can show you what their agents did. The interesting record is what the agents <em>tried and were not allowed to do</em>. This page renders the gates of the town and the events where they fired, straight from the journals.</p>
+
+    <p class='letter-line sign'>Gated execution &mdash; the human-approval lane</p>
+    <table class='rec-table'>
+<tr><td>DEPLOY: wyo.town marketing site (github sroerick/wyo.town) i</td><td class="mono">SPEC &amp;rarr; APPROVED</td><td>open</td></tr>
+<tr><td>[hollis] pkg_add chromium - UI-test gate (doasq v2)</td><td class="mono">HUMAN-REVIEW</td><td>open</td></tr>
+<tr><td>TEST: doasq-exec v3 execution-path exercise (harmless: id + </td><td class="mono">CODE &amp;rarr; LOGIC-REVIEW &amp;rarr; APPROVED</td><td>open</td></tr>
+    </table>
+
+    <p class='letter-line sign'>Enforcement events</p>
+    <table class='rec-table'>
+<tr><td class="mono">deploy pipeline</td><td>brand gate REJECTED a push</td></tr>
+    </table>
+
+    <p class='letter-line'>A denial here is not a failure. It is the system working: an agent reached for something, the fence held, and the attempt is on the record. Most agent deployments cannot show you their denials. We ship them.</p>
+    <p class='letter-line mono'><a href='ops.html'>the record</a> &middot; <a href='index.html'>&larr; back</a></p>
+  </div>
+</div>
+
+<script src='brand/starfield.js' defer></script>
+</body>
+</html>
