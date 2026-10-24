@@ -27,7 +27,12 @@
 
 .mast-copy .sign {
   margin-top: 6px;
-  font-size: 92px;
+  /* the wordmark is the one piece of type that can outgrow the sheet: at a
+     fixed 40px it clears the trim at 390 but not at 375, and the sheet
+     clipped nothing — the type just ran past the frame. Sized from the
+     viewport against the sheet's 100px gutter, it fits every phone down to
+     320 and still reads at placard scale. */
+  font-size: clamp(26px, calc(100vw - 140px), 92px);
 }
 
 .mast-bottom {
@@ -59,11 +64,21 @@ html { overflow-x: clip; }
    line of type is held clear of it so the two don't collide. */
 .mast-bottom { padding-left: 150px; padding-right: 150px; }
 
+/* Every model PNG is a 512px square with transparent padding around the
+   render, so `bottom: 0` puts the *box* on the trim and leaves the art
+   hovering above it — by an amount that scales with the sprite, which is
+   why the plants floated at narrow widths and not at wide ones. Each
+   sprite therefore carries its own foot: the fraction of its height that
+   is empty below the lowest ink (measured from the alpha bbox). Plant it
+   on the trim with a 2px sink, the way the cactus is planted, and only
+   the width changes between breakpoints. */
 .mast-cactus {
+  --w: 150px;
+  --foot: 0.0801;            /* pricklypear: ink ends 41px up of 512 */
   position: absolute;
   right: -14px;
-  bottom: -16px;
-  width: 150px;
+  bottom: calc(var(--w) * var(--foot) * -1 - 2px);
+  width: var(--w);
   max-width: none;
   height: auto;
   pointer-events: none;
@@ -74,10 +89,12 @@ html { overflow-x: clip; }
    to run up into the banner and off the trim. The bottom line of type is
    held clear of it so the two don't collide. It sways into the wind. */
 .mast-saguaro {
+  --w: 400px;
+  --foot: 0.0547;            /* saguaro: ink ends 28px up of 512 */
   position: absolute;
   left: -140px;
-  bottom: -20px;
-  width: 400px;
+  bottom: calc(var(--w) * var(--foot) * -1 - 2px);
+  width: var(--w);
   max-width: none;
   height: auto;
   pointer-events: none;
@@ -112,13 +129,23 @@ html { overflow-x: clip; }
   50% { transform: translateY(-16px) rotate(3deg); }
 }
 
-/* the tuna can, likewise off its shelf: a small still life in the banner
-   sky on the left of the field, balancing the fish on the right */
+/* the tuna can, off its shelf: the third still life, stood on the sand at
+   the right of the field between the meta line and the pricklypear.
+
+   It used to hang in the banner sky at a fixed `left`, which put it over
+   the brand mark at every width and drifted against the wordmark as the
+   sheet narrowed. Grounded, it obeys the same rule as the plants (it
+   stands on the trim); anchored to the sheet's right edge, which is the
+   one edge the sheet keeps at every width, its relationship to the pear
+   holds from 1440 down to a phone. It is the only sprite whose foot is
+   deep (88px of 512), so it is the one that most needed the foot rule. */
 .mast-tuna {
+  --w: 76px;
+  --foot: 0.1719;            /* tuna: ink ends 88px up of 512 */
   position: absolute;
-  top: -72px;
-  left: 251px;
-  width: 82px;
+  right: 210px;
+  bottom: calc(var(--w) * var(--foot) * -1 - 2px);
+  width: var(--w);
   max-width: none;
   height: auto;
   pointer-events: none;
@@ -246,25 +273,31 @@ html { overflow-x: clip; }
 
 @media (max-width: 880px) {
   .masthead .mast { padding-left: 150px; flex-direction: column; align-items: flex-start; gap: 16px; }
-  .mast-copy .sign { font-size: 52px; }
+  .mast-copy .sign { font-size: clamp(26px, calc(100vw - 128px), 52px); }
   .mast-bottom { padding-left: 150px; flex-direction: column; align-items: flex-start; padding-right: 0; }
-  .mast-cactus { width: 110px; max-width: none; bottom: 0; }
-  .mast-saguaro { left: -90px; width: 320px; max-width: none; bottom: 0; }
+  .mast-cactus { --w: 110px; }
+  .mast-saguaro { --w: 320px; left: -90px; }
   .mast-fish { top: -72px; right: 84px; width: 100px; max-width: none; }
-  .mast-tuna { top: -54px; left: 196px; width: 60px; max-width: none; }
+  .mast-tuna { --w: 62px; right: 150px; }
   .manifesto { grid-template-columns: 1fr; gap: 0; }
   .entry-hero { grid-template-columns: 1fr; gap: 24px; }
   .plate { max-width: 320px; }
 }
 
 @media (max-width: 560px) {
-  .mast-copy .sign { font-size: 40px; }
+  /* "wyo.town" sets about 6.03px wide per px of type, and the text starts
+     ~151px in from the viewport (body+sheet+trim+gutter). So the widest
+     type that still fits is (100vw - 151px) / 6.03. Below ~440px the fixed
+     40px ran past the trim and the wordmark was cut by the page edge. */
+  .mast-copy .sign { font-size: clamp(22px, calc(16.6vw - 25px), 40px); }
   .masthead .mast { padding-left: 100px; }
-  .mast-cactus { width: 85px; max-width: none; }
-  .mast-saguaro { left: -80px; width: 260px; max-width: none; }
+  .mast-cactus { --w: 85px; }
+  .mast-saguaro { --w: 260px; left: -80px; }
   .mast-fish { top: -64px; right: 56px; width: 72px; max-width: none; }
-  .mast-tuna { top: -40px; left: 152px; width: 44px; max-width: none; }
-  .mast-bottom { padding-left: 100px; padding-right: 0; }
+  .mast-tuna { --w: 46px; right: 120px; }
+  /* the pear owns the bottom-right corner at this width; without the
+     reserve the meta line runs under its pads */
+  .mast-bottom { padding-left: 100px; padding-right: 74px; }
   .plank-no { font-size: 30px; }
   .plank-title { font-size: 18px; }
 }
