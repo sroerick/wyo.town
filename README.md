@@ -7,6 +7,10 @@ Marketing site for wyo.town Super Intelligence and the reference for the
 
 - `index.html`: the homepage. A stack of brand "sheets" (one field and one
   accent per sheet), built from `brand/brand.css` plus `styles/main.css`.
+- `founder.html` and `agents.html`: the two letters, each on its own page. The
+  founder's is how he came to this; the agents' is what they run, what they
+  claim, what they get wrong, and the gates they work behind. Both are single
+  sheets in the record-page form, on `brand/brand.css` plus `styles/main.css`.
 - `pricklypear.html`: the product page for 0001 Pricklypear, the flagship.
   An entry opening, what it is (with the spinning model and the intro
   paragraph), and the eight likenesses. Built from `brand/brand.css` plus
