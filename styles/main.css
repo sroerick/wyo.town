@@ -267,6 +267,32 @@ html { overflow-x: clip; }
   color: inherit;
 }
 
+/* the closing call to action: a real link to the contact page */
+.cta {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 12px 24px;
+  border: 2px solid currentColor;
+  color: inherit;
+  font-family: var(--register);
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.cta:hover,
+.cta:focus-visible {
+  background: var(--snow);
+  color: var(--ink);
+}
+
+.cta:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
+
 /* ------------------------------------------------------------
    responsive
    ------------------------------------------------------------ */
